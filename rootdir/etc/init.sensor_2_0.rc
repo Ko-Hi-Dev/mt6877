@@ -10,7 +10,6 @@ on post-fs-data
     # Sensor
     chmod 0660 /dev/hf_manager
     chown system system /dev/hf_manager
-    #ifdef OPLUS_FEATURE_SENSOR
     chmod 0660 /dev/m_virtual_sensor_misc
     chown system system /dev/m_virtual_sensor_misc
     chmod 0660 /sys/class/oplus_sensor/m_virtual_sensor_misc/virtual_sensoractive
@@ -21,4 +20,3 @@ on post-fs-data
     chown system system /sys/class/oplus_sensor/m_virtual_sensor_misc/virtual_sensordelay
     chown system system /sys/class/oplus_sensor/m_virtual_sensor_misc/virtual_sensorbatch
     chown system system /sys/class/oplus_sensor/m_virtual_sensor_misc/virtual_sensorflush
-    #endif
