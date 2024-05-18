@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
-    <card name="mt6885mt6359" />
+    <card name="mt6877mt6359" />
     <mixercontrol>
         <versioncontrol value="1.01">
         </versioncontrol>
-        <!-- "kctl name" are the initial mixer settings -->
-        <!-- <kctl name="XXXX" value="XXXX" /> -->
+        <!-- These are the initial mixer settings -->
+        <kctl name="Audio_Speaker_class_Switch" value="CLASSAB" />
         <!--headphone output-->
         <path name="headphone_output" value="turnon">
             <kctl name="DAC In Mux" value="Normal Path" />
@@ -224,30 +224,6 @@
             <kctl name="UL_SRC_MUX" value="AMIC" />
             <kctl name="UL2_SRC_MUX" value="AMIC" />
         </path>
-        <path name="builtin_Mic_HDR_DualMic" value="turnon">
-            <kctl name="MISO0_MUX" value="UL1_CH1" />
-            <kctl name="MISO1_MUX" value="UL1_CH2" />
-            <kctl name="MISO2_MUX" value="UL2_CH1" />
-            <kctl name="ADC_L_Mux" value="Left Preamplifier" />
-            <kctl name="PGA_L_Mux" value="AIN0" />
-            <kctl name="ADC_R_Mux" value="Right Preamplifier" />
-            <kctl name="PGA_R_Mux" value="AIN0" />
-            <kctl name="ADC_3_Mux" value="Preamplifier" />
-            <kctl name="PGA_3_Mux" value="AIN3" />
-            <kctl name="DMIC0_MUX" value="DMIC_DATA0" />
-            <kctl name="DMIC1_MUX" value="DMIC_DATA1_L_1" />
-            <kctl name="DMIC2_MUX" value="DMIC_DATA1_R" />
-        </path>
-        <path name="builtin_Mic_HDR_DualMic" value="turnoff">
-            <kctl name="ADC_L_Mux" value="Idle" />
-            <kctl name="ADC_R_Mux" value="Idle" />
-            <kctl name="ADC_3_Mux" value="Idle" />
-            <kctl name="PGA_L_Mux" value="None" />
-            <kctl name="PGA_R_Mux" value="None" />
-            <kctl name="PGA_3_Mux" value="None" />
-            <kctl name="UL_SRC_MUX" value="AMIC" />
-            <kctl name="UL2_SRC_MUX" value="AMIC" />
-        </path>
         <path name="builtin_Mic_DualMic_Inverse" value="turnon">
             <kctl name="MISO0_MUX" value="UL1_CH2" />
             <kctl name="MISO1_MUX" value="UL1_CH1" />
@@ -338,30 +314,6 @@
             <kctl name="UL_SRC_MUX" value="AMIC" />
             <kctl name="UL2_SRC_MUX" value="AMIC" />
         </path>
-        <path name="builtin_Mic_HDR_BackMic" value="turnon">
-            <kctl name="MISO0_MUX" value="UL1_CH1" />
-            <kctl name="MISO1_MUX" value="UL1_CH2" />
-            <kctl name="MISO2_MUX" value="UL2_CH1" />
-            <kctl name="ADC_L_Mux" value="Left Preamplifier" />
-            <kctl name="PGA_L_Mux" value="AIN0" />
-            <kctl name="ADC_R_Mux" value="Right Preamplifier" />
-            <kctl name="PGA_R_Mux" value="AIN0" />
-            <kctl name="ADC_3_Mux" value="Preamplifier" />
-            <kctl name="PGA_3_Mux" value="AIN3" />
-            <kctl name="DMIC0_MUX" value="DMIC_DATA0" />
-            <kctl name="DMIC1_MUX" value="DMIC_DATA1_L_1" />
-            <kctl name="DMIC2_MUX" value="DMIC_DATA1_R" />
-        </path>
-        <path name="builtin_Mic_HDR_BackMic" value="turnoff">
-            <kctl name="ADC_L_Mux" value="Idle" />
-            <kctl name="ADC_R_Mux" value="Idle" />
-            <kctl name="ADC_3_Mux" value="Idle" />
-            <kctl name="PGA_L_Mux" value="None" />
-            <kctl name="PGA_R_Mux" value="None" />
-            <kctl name="PGA_3_Mux" value="None" />
-            <kctl name="UL_SRC_MUX" value="AMIC" />
-            <kctl name="UL2_SRC_MUX" value="AMIC" />
-        </path>
         <path name="builtin_Mic_BackMic_Inverse" value="turnon">
             <kctl name="MISO0_MUX" value="UL1_CH1" />
             <kctl name="MISO1_MUX" value="UL1_CH2" />
@@ -437,17 +389,6 @@
             <kctl name="PGA_L_Mux" value="AIN1" />
         </path>
         <path name="headset_mic_input" value="turnoff">
-            <kctl name="MISO1_MUX" value="UL1_CH2" />
-            <kctl name="ADC_L_Mux" value="Idle" />
-            <kctl name="PGA_L_Mux" value="None" />
-        </path>
-        <path name="headset_mic_input_HDR" value="turnon">
-            <kctl name="MISO0_MUX" value="UL1_CH1" />
-            <kctl name="MISO1_MUX" value="UL1_CH1" />
-            <kctl name="ADC_L_Mux" value="Left Preamplifier" />
-            <kctl name="PGA_L_Mux" value="AIN1" />
-        </path>
-        <path name="headset_mic_input_HDR" value="turnoff">
             <kctl name="MISO1_MUX" value="UL1_CH2" />
             <kctl name="ADC_L_Mux" value="Idle" />
             <kctl name="PGA_L_Mux" value="None" />
@@ -1595,7 +1536,7 @@
             <kctl name="UL6_CH1 DL6_CH1" value="0" />
             <kctl name="UL6_CH2 DL6_CH2" value="0" />
         </path>
-        <path name="PLAYBACK4_TO_CAPTURE6" value="turnoff">
+        <path name="PLAYBACK4_TO_CAPTURE6" value="turnon">
             <kctl name="UL6_CH1 DL4_CH1" value="1" />
             <kctl name="UL6_CH2 DL4_CH2" value="1" />
         </path>

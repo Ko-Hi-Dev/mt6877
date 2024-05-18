@@ -46,7 +46,7 @@
         <!-- for aurisys_scene playback with smartpa for all mixed streamout -->
         <aurisys_scenario aurisys_scenario="AURISYS_SCENARIO_DSP_PLAYBACK_SMARTPA">
             <downlink_library_name_list digital_gain_lib_name="">
-                <library name="smartpa_tfaxxxx"/>
+                <library name="smartpa_rt5512"/>
             </downlink_library_name_list>
         </aurisys_scenario>
         <!-- for aurisys_scene record streamin normal -->
@@ -70,13 +70,13 @@
         <!-- for aurisys_scene call final for sph final process -->
         <aurisys_scenario aurisys_scenario="AURISYS_SCENARIO_DSP_CALL_FINAL">
             <downlink_library_name_list digital_gain_lib_name="">
-                <library name="smartpa_tfaxxxx"/>
+                <library name="smartpa_rt5512"/>
             </downlink_library_name_list>
         </aurisys_scenario>
         <!-- for aurisys_scene ktv for headphone feedback process -->
         <aurisys_scenario aurisys_scenario="AURISYS_SCENARIO_DSP_KTV">
             <downlink_library_name_list digital_gain_lib_name="">
-                <library name="ktv_reverb"/>
+                <library name="aurisys_demo"/>
             </downlink_library_name_list>
         </aurisys_scenario>
     </aurisys_scenarios>
@@ -288,49 +288,73 @@
                 </component>
             </components>
         </library>
-        <!-- Yongzhi.Zhang@PSW.MM.AudioDriver.Feature.1209435, 2019/03/09, add for P90 KTV -->
         <!--
          * =====================================================================
-         *   KTV Reverb
+         *   MT6660 smartpa
          * =====================================================================
         -->
-        <library name="ktv_reverb"
-                 lib_path="/vendor/lib/libaurisysdemo.so"
-                 lib64_path="/vendor/lib64/libaurisysdemo.so"
-                 param_path=""
+        <library name="smartpa_mt6660"
+                 lib_path="/vendor/lib/libaudiosmartpamtk.so"
+                 lib64_path="/vendor/lib64/libaudiosmartpamtk.so"
+                 param_path="/vendor/etc/smartpa_param/SmartPaVendor1_AudioParam.dat"
                  lib_dump_path="AUTO"
-                 adb_cmd_key="KTVREVERB">
+                 adb_cmd_key="MT6660">
             <components>
-                <!-- for aurisys_scene ktv -->
-                <component aurisys_scenario="AURISYS_SCENARIO_DSP_KTV"
+                <!-- for aurisys_scene playback with smartpa -->
+                <component aurisys_scenario="AURISYS_SCENARIO_DSP_PLAYBACK_SMARTPA"
                            sample_rate="48000"
-                           audio_format="AUDIO_FORMAT_PCM_16_BIT"
-                           frame_size_ms="5"
+                           audio_format="AUDIO_FORMAT_PCM_8_24_BIT"
+                           frame_size_ms="0"
                            b_interleave="1"
-                           enable_log="1"
+                           enable_log="0"
                            enable_raw_dump="0"
                            enable_lib_dump="0"
                            enhancement_mode="0">
                     <downlink_process>
                         <buf_in  data_buf_type="DATA_BUF_DOWNLINK_IN"
-                                 num_channels="1"/>
+                                 num_channels="2"/>
                         <buf_out data_buf_type="DATA_BUF_DOWNLINK_OUT"
-                                 num_channels="1"/>
+                                 num_channels="2"/>
+                        <buf_refs>
+                             <buf_ref data_buf_type="DATA_BUF_IV_BUFFER"
+                                     num_channels="2"/>
+                        </buf_refs>
+                    </downlink_process>
+                </component>
+                <!-- for aurisys_scene call final -->
+                <component aurisys_scenario="AURISYS_SCENARIO_DSP_CALL_FINAL"
+                           sample_rate="48000"
+                           audio_format="AUDIO_FORMAT_PCM_8_24_BIT"
+                           frame_size_ms="0"
+                           b_interleave="1"
+                           enable_log="0"
+                           enable_raw_dump="0"
+                           enable_lib_dump="0"
+                           enhancement_mode="0">
+                    <downlink_process>
+                        <buf_in  data_buf_type="DATA_BUF_DOWNLINK_IN"
+                                 num_channels="2"/>
+                        <buf_out data_buf_type="DATA_BUF_DOWNLINK_OUT"
+                                 num_channels="2"/>
+                        <buf_refs>
+                             <buf_ref data_buf_type="DATA_BUF_IV_BUFFER"
+                                     num_channels="2"/>
+                        </buf_refs>
                     </downlink_process>
                 </component>
             </components>
         </library>
         <!--
          * =====================================================================
-         *   NXP smartpa
+         *   RT5512 smartpa
          * =====================================================================
         -->
-        <library name="smartpa_tfaxxxx"
-                 lib_path="/odm/lib/libnxpsmartpaparser.so"
-                 lib64_path="/odm/lib64/libnxpsmartpaparser.so"
-                 param_path="/odm/etc/audio/smartpa_param/"
+        <library name="smartpa_rt5512"
+                 lib_path="/vendor/lib/libaudiosmartpartk.so"
+                 lib64_path="/vendor/lib64/libaudiosmartpartk.so"
+                 param_path="/vendor/etc/smartpa_param/SmartPaVendor1_AudioParam.dat"
                  lib_dump_path="AUTO"
-                 adb_cmd_key="TFAxxxx">
+                 adb_cmd_key="RT5512">
             <components>
                 <!-- for aurisys_scene playback with smartpa -->
                 <component aurisys_scenario="AURISYS_SCENARIO_DSP_PLAYBACK_SMARTPA"
@@ -444,9 +468,9 @@
          * =====================================================================
         -->
         <library name="nxp_speech"
-                 lib_path="/odm/lib/libnxpspeech.so"
-                 lib64_path="/odm/lib64/libnxpspeech.so"
-                 param_path="/odm/etc/audio/nxp"
+                 lib_path="/vendor/lib/libnxpspeech.so"
+                 lib64_path="/vendor/lib64/libnxpspeech.so"
+                 param_path="/vendor/etc/nxp/"
                  lib_dump_path="AUTO"
                  adb_cmd_key="NXP_SPH">
             <components>
@@ -456,7 +480,7 @@
                            audio_format="AUDIO_FORMAT_PCM_16_BIT"
                            frame_size_ms="20"
                            b_interleave="0"
-                           enable_log="1"
+                           enable_log="0"
                            enable_raw_dump="0"
                            enable_lib_dump="0"
                            enhancement_mode="0">
@@ -467,7 +491,7 @@
                                  num_channels="1"/>
                         <buf_refs>
                             <buf_ref data_buf_type="DATA_BUF_ECHO_REF"
-                                     num_channels="2"/>
+                                     num_channels="1"/>
                         </buf_refs>
                     </uplink_process>
                     <downlink_process>
@@ -481,9 +505,9 @@
                 <component aurisys_scenario="AURISYS_SCENARIO_DSP_VOIP"
                            sample_rate="16000,48000"
                            audio_format="AUDIO_FORMAT_PCM_16_BIT"
-                           frame_size_ms="20"
+                           frame_size_ms="10"
                            b_interleave="0"
-                           enable_log="1"
+                           enable_log="0"
                            enable_raw_dump="0"
                            enable_lib_dump="0"
                            enhancement_mode="0">
@@ -494,7 +518,7 @@
                                  num_channels="1"/>
                         <buf_refs>
                             <buf_ref data_buf_type="DATA_BUF_ECHO_REF"
-                                     num_channels="2"/>
+                                     num_channels="1"/>
                         </buf_refs>
                     </uplink_process>
                     <downlink_process>
@@ -512,9 +536,9 @@
          * =====================================================================
         -->
         <library name="nxp_record"
-                 lib_path="/odm/lib/libnxprecord.so"
-                 lib64_path="/odm/lib64/libnxprecord.so"
-                 param_path="/odm/etc/audio/nxp"
+                 lib_path="/vendor/lib/libnxprecord.so"
+                 lib64_path="/vendor/lib64/libnxprecord.so"
+                 param_path="/vendor/etc/nxp"
                  lib_dump_path="AUTO"
                  adb_cmd_key="NXP_REC">
             <components>
@@ -524,7 +548,7 @@
                            audio_format="AUDIO_FORMAT_PCM_16_BIT"
                            frame_size_ms="10"
                            b_interleave="0"
-                           enable_log="1"
+                           enable_log="0"
                            enable_raw_dump="0"
                            enable_lib_dump="0"
                            enhancement_mode="0">
@@ -535,13 +559,13 @@
                                  num_channels="2"/>
                     </uplink_process>
                 </component>
-                <!-- for aurisys_scene record streamin normal -->
+                <!-- for aurisys_scene record streamin fast -->
                 <component aurisys_scenario="AURISYS_SCENARIO_DSP_RECORD_FAST"
                            sample_rate="48000"
                            audio_format="AUDIO_FORMAT_PCM_16_BIT"
                            frame_size_ms="10"
                            b_interleave="0"
-                           enable_log="1"
+                           enable_log="0"
                            enable_raw_dump="0"
                            enable_lib_dump="0"
                            enhancement_mode="0">
