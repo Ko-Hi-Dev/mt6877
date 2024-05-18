@@ -1,15 +1,15 @@
 [
   {
-    "repository": "oplus-ossi-development/android_kernel_oplus_mt6877",
+    "repository": "oneplus-mediatek-dev/kernel_oneplus_ivan_4.19",
     "target_path": "kernel/oplus/mt6877",
-    "revision": "lineage-21",
+    "revision": "main",
     "remote": "github"
   },
   {
-    "repository": "oplus-ossi-development/proprietary_vendor_oplus_mt6877-common",
+    "repository": "Ko_Hi/mt6877_vendor.git",
     "target_path": "vendor/oplus/mt6877-common",
-    "revision": "lineage-21",
-    "remote": "github"
+    "revision": "master",
+    "remote": "gitlab"
   },
   {
     "repository": "oplus-ossi-development/android_hardware_mediatek",
