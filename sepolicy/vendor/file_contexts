@@ -224,7 +224,6 @@
 /(vendor|odm)/lib(64)?/mt6877/libneuron_runtime\.5\.so                                                  u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/mt6983/libneuron_runtime\.5\.so                                                  u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/mt6895/libneuron_runtime\.5\.so                                                  u:object_r:same_process_hal_file:s0
-/(vendor|odm)/lib(64)?/mt6877/libneuron_runtime\.5\.so                                                  u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/libmvpu_cic_ci_compiler\.so                                                      u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/libmvpu_clc_cl_compiler\.so                                                      u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/libmvpu_clc_mvpu_debuginfo\.so                                                   u:object_r:same_process_hal_file:s0
