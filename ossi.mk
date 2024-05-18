@@ -293,10 +293,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/permissions/oplus_camera_default_grant_permissions_list.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/oplus_camera_default_grant_permissions_list.xml \
     $(COMMON_PATH)/configs/sysconfig/hiddenapi-package-whitelist-oplus-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-whitelist-oplus-system.xml
 
-# ORMS
-PRODUCT_PACKAGES += \
-    orms_core_config
-
 # OplusDoze
 PRODUCT_PACKAGES += \
     OplusDoze
