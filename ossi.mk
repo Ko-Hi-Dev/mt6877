@@ -497,8 +497,8 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-mediatekv2
 
 # Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.mt6877
+#PRODUCT_PACKAGES += \
+ #   android.hardware.vibrator-service.mt6877
 
 # Viper4Android
 PRODUCT_COPY_FILES += \
