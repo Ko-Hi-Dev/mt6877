@@ -141,7 +141,7 @@ BOARD_SUPER_PARTITION_GROUPS := main
 
 # Properties
 TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/props/vendor.prop
-#TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/props/system.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/props/system.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/configs/props/product.prop
 
 # Power
