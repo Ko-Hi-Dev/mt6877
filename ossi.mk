@@ -167,13 +167,9 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.safe_union@1.0.vendor \
     libhidltransport \
-    libhardware \
-    libhwbinder \
     libhidltransport.vendor \
-    libhardware.vendor \
-    libhwbinder.vendor
+    libhwbinder.vendor \
 
 # Health
 PRODUCT_PACKAGES += \
@@ -203,13 +199,11 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.c2@1.0.vendor \
-    android.hardware.media.c2@1.1.vendor \
-    android.hardware.media.c2@1.2.vendor \
-    libavservices_minijail.vendor \
-    libstagefright_softomx_plugin.vendor \
+    libavservices_minijail_vendor \
+    libcodec2_hidl@1.2.vendor \
+    libcodec2_soft_common.vendor \
     libsfplugin_ccodec_utils.vendor \
-    libstagefright_bufferpool@2.0.1.vendor
+    libstagefright_softomx_plugin.vendor
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
