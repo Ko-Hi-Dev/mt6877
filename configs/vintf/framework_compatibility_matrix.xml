@@ -164,6 +164,14 @@
             <instance>internal/0</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true"> 
+        <name>android.hardware.secure_element</name> 
+        <version>1.0-2</version> 
+        <interface>
+            <name>ISecureElement</name> 
+            <instance>SIM1</instance> 
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.camera.postproc</name>
         <version>1.0</version>
@@ -967,19 +975,18 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.trustonic.tee</name>
-        <version>1.1</version>
-        <interface>
-            <name>ITee</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.lineage.touch</name>
         <version>1.0</version>
         <interface>
             <name>ITouchscreenGesture</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.trustonic.tee</name>
+        <version>1.1</version>
+        <interface>
+            <name>ITee</name>
             <instance>default</instance>
         </interface>
     </hal>
