@@ -455,7 +455,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # IMS
 PRODUCT_BOOT_JARS += \
-    mediatek-carrier-config-manager \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
@@ -463,7 +462,6 @@ PRODUCT_BOOT_JARS += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
-    oplus-support-wrapper
 
 # Thermal
 PRODUCT_PACKAGES += \
