@@ -129,7 +129,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
     android.hardware.graphics.composer@2.1-resources.vendor \
     android.hardware.graphics.composer@2.2-resources.vendor \
-    android.hardware.memtrack@1.0-impl \
     android.hardware.graphics.composer@2.3-service \
     android.hidl.allocator@1.0.vendor \
     android.hardware.memtrack-service.mediatek-mali \
@@ -216,7 +215,6 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.2.vendor \
     libavservices_minijail.vendor \
     libstagefright_softomx_plugin.vendor \
-    libcodec2_soft_common.vendor \
     libsfplugin_ccodec_utils.vendor \
     libstagefright_bufferpool@2.0.1.vendor
 
@@ -362,14 +360,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek
 
 PRODUCT_PACKAGES += \
-    android.hardware.power-V2-ndk_platform \
-    android.hardware.power@1.0 \
-    android.hardware.power@1.2.vendor \
-    vendor.mediatek.hardware.mtkpower@1.0.vendor \
-    vendor.mediatek.hardware.mtkpower@1.1.vendor \
-    vendor.mediatek.hardware.mtkpower@1.2.vendor\
-    android.hardware.power-V2-ndk_platform.so
-
+    vendor.mediatek.hardware.mtkpower@1.2.vendor
 # Perf
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
@@ -455,6 +446,8 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
+    hardware/google/interfaces \
+    hardware/google/pixel \
     $(DEVICE_PATH) \
     $(COMMON_PATH) \
     hardware/mediatek \
@@ -462,6 +455,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # IMS
 PRODUCT_BOOT_JARS += \
+    mediatek-carrier-config-manager \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
@@ -469,6 +463,7 @@ PRODUCT_BOOT_JARS += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
+    oplus-support-wrapper
 
 # Thermal
 PRODUCT_PACKAGES += \
@@ -531,4 +526,4 @@ PRODUCT_PACKAGES += \
     libsensors_shim
 
 # Inherit from vendor blobs
-#$(call inherit-product, vendor/oplus/mt6877-common/mt6877-common-vendor.mk)
+$(call inherit-product, vendor/oplus/mt6877-common/mt6877-common-vendor.mk)
