@@ -213,14 +213,13 @@ PRODUCT_PACKAGES += \
 # Media
 PRODUCT_PACKAGES += \
     libcodec2_soft_common.vendor \
-    libcodec2_hidl@1.2.vendor \
     android.hardware.media.c2@1.0.vendor \
     android.hardware.media.c2@1.1.vendor \
     android.hardware.media.c2@1.2.vendor \
     libavservices_minijail.vendor \
     libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
-    libstagefright_bufferpool@2.0.1.vendor
+    libstagefright_bufferpool@2.0.1.vendor \
     libstagefright_softomx_plugin.vendor
 
 PRODUCT_COPY_FILES += \
