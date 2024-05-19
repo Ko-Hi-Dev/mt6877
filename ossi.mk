@@ -463,7 +463,6 @@ PRODUCT_BOOT_JARS += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
-    oplus-support-wrapper
 
 # Thermal
 PRODUCT_PACKAGES += \
