@@ -201,11 +201,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.mt6877
 
-
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
-    libcodec2_hidl@1.2.vendor \
     libcodec2_soft_common.vendor \
     libsfplugin_ccodec_utils.vendor \
     libstagefright_softomx_plugin.vendor
