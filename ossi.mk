@@ -456,7 +456,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # IMS
 PRODUCT_BOOT_JARS += \
-
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
