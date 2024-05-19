@@ -530,4 +530,4 @@ PRODUCT_PACKAGES += \
     libsensors_shim
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/oplus/mt6877-common/mt6877-common-vendor.mk)
+#$(call inherit-product, vendor/oplus/mt6877-common/mt6877-common-vendor.mk)
