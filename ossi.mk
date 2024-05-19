@@ -362,11 +362,13 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek
 
 PRODUCT_PACKAGES += \
+    android.hardware.power-V2-ndk_platform
     android.hardware.power@1.0 \
     android.hardware.power@1.2.vendor \
     vendor.mediatek.hardware.mtkpower@1.0.vendor \
     vendor.mediatek.hardware.mtkpower@1.1.vendor \
-    vendor.mediatek.hardware.mtkpower@1.2.vendor
+    vendor.mediatek.hardware.mtkpower@1.2.vendor\
+    android.hardware.power-V2-ndk_platform.so
 
 # Perf
 PRODUCT_COPY_FILES += \
