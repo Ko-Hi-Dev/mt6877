@@ -362,6 +362,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek
 
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.0 \
     android.hardware.power@1.2.vendor \
     vendor.mediatek.hardware.mtkpower@1.0.vendor \
     vendor.mediatek.hardware.mtkpower@1.1.vendor \
@@ -467,7 +468,6 @@ PRODUCT_BOOT_JARS += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
-    oplus-support-wrapper
 
 # Thermal
 PRODUCT_PACKAGES += \
