@@ -355,12 +355,15 @@ PRODUCT_COPY_FILES += \
 # Power
 #$(call inherit-product, hardware/oplus/power-libperfmgr/power-libperfmgr.mk)
 
-# Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-mediatek
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor \
+    vendor.mediatek.hardware.mtkpower@1.0.vendor \
+    vendor.mediatek.hardware.mtkpower@1.1.vendor \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
+
 # Perf
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
@@ -453,6 +456,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # IMS
 PRODUCT_BOOT_JARS += \
+
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
@@ -460,6 +464,7 @@ PRODUCT_BOOT_JARS += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
+    oplus-support-wrapper
 
 # Thermal
 PRODUCT_PACKAGES += \
