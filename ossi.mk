@@ -191,6 +191,7 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
+   android.hardware.keymaster@4.1
    android.hardware.keymaster-V3-ndk_platform.vendor \
    android.hardware.keymaster@3.0.vendor \
    android.hardware.keymaster@4.0.vendor \
@@ -206,12 +207,15 @@ PRODUCT_PACKAGES += \
    libkeystore-wifi-hidl \
    libkeystore-engine-wifi-hidl
 
+$(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.keymaster@4.1.so
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.mt6877
 
 # Media
 PRODUCT_PACKAGES += \
+    libcodec2_hidl@1.2.vendor \
     libcodec2_soft_common.vendor \
     android.hardware.media.c2@1.0.vendor \
     android.hardware.media.c2@1.1.vendor \
