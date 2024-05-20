@@ -1,1 +1,2 @@
 allow mobicore system_oplus_project_prop:file { read getattr open map };
+allow mobicore system_prop:file  {read write};
