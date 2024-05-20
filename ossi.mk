@@ -208,7 +208,7 @@ PRODUCT_PACKAGES += \
    libkeystore-engine-wifi-hidl
 
 PRODUCT_PACKAGES += \
-$(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.keymaster@4.1.so \
+$(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.keymaster@4.1.so
 
 # Lights
 PRODUCT_PACKAGES += \
