@@ -3,6 +3,8 @@ ro.vendor.pq.mtk_aal_support=1
 ro.vendor.mtk_aal_support=1
 
 # ADB
+ro.adb.secure=0
+ro.debuggable=1
 persist.adb.nonblocking_ffs=0
 
 # AEE
