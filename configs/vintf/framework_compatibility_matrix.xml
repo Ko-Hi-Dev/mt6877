@@ -975,7 +975,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.nfc</name>
         <version>1.0-2</version>
