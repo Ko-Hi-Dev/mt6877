@@ -133,6 +133,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.graphics.composer@2.3-service \
     android.hidl.allocator@1.0.vendor \
+    android.hardware.memtrack-service.mediatek-mali \
     android.hardware.graphics.common-V2-ndk_platform.vendor \
     android.hardware.graphics.common-V2-ndk.vendor \
     disable_configstore
@@ -359,7 +360,7 @@ PRODUCT_COPY_FILES += \
 #$(call inherit-product, hardware/oplus/power-libperfmgr/power-libperfmgr.mk)
 
 PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub
+    android.hardware.power-service-mediatek
 
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
@@ -469,6 +470,8 @@ PRODUCT_BOOT_JARS += \
 
 # Thermal
 PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.mtk \
+    android.hardware.thermal@2.0.vendor \
     android.hardware.thermal@1.0-impl
 
 # Touch
@@ -476,13 +479,13 @@ PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.oplus
 
 # USB
-#PRODUCT_PACKAGES += \
-#    android.hardware.usb@1.3.vendor \
-#   android.hardware.usb.gadget@1.1.vendor
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.3.vendor \
+    android.hardware.usb.gadget@1.1.vendor
 
 # Vibrator
 #PRODUCT_PACKAGES += \
-   android.hardware.vibrator-service.mt6877
+ #   android.hardware.vibrator-service.mt6877
 
 # Viper4Android
 PRODUCT_COPY_FILES += \
