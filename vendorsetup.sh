@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git clone https://github.com/oneplus-mediatek-dev/kernel_oneplus_ivan_4.19.git kernel/oplus/mt6877
+
 # KernelSU
 KSU=kernel/oplus/mt6877/KernelSU
 rm -rf $KSU && git clone https://github.com/tiann/KernelSU $KSU
