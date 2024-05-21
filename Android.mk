@@ -18,6 +18,8 @@ VENDOR_SYMLINKS := \
     $(TARGET_OUT_VENDOR)/lib/hw \
     $(TARGET_OUT_VENDOR)/lib64/hw \
     $(TARGET_OUT_VENDOR)/lib/egl \
+    $(TARGET_OUT_VENDOR)/lib/mt6877 \
+    $(TARGET_OUT_VENDOR)/lib64/mt6877 \
     $(TARGET_OUT_VENDOR)/lib64/egl
 
 $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
@@ -66,7 +68,6 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@ln -sf /vendor/lib/egl/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib/hw/vulkan.mt6877.so
 	@ln -sf /vendor/lib64/egl/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib64/hw/vulkan.mt6877.so
 	@ln -sf mt6877/libmcv_runtime.mtk.so $(TARGET_OUT_VENDOR)/lib64/libmcv_runtime.mtk.so
-	@ln -sf mt6877/libDR.so $(TARGET_OUT_VENDOR)/lib64/libDR.so
 	@ln -sf mt6877/libmnl.so $(TARGET_OUT_VENDOR)/lib64/libmnl.so
 	@ln -sf mt6877/libmdla_ut.so $(TARGET_OUT_VENDOR)/lib64/libmdla_ut.so
 	@ln -sf mt6877/libdpframework.so $(TARGET_OUT_VENDOR)/lib64/libdpframework.so
