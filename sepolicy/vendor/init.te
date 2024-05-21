@@ -27,5 +27,6 @@ allow init sysfs_vibrator:file rw_file_perms;
 allow init system_file:file { create };
 allow init system_file:file { setattr };
 allow init system_file:file { execute_no_trans };
+allow init vendor_shell_exec:file { execute_no_trans };
 
 get_prop(init, exported_system_prop)
