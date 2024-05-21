@@ -41,7 +41,7 @@ bluetooth.profile.pan.nap.enabled=true
 bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
 vendor.bluetooth.ldac.abr=true
-ro.vendor.bt.platform=6893
+ro.vendor.bt.platform=6877
 
 # Camera
 camera.disable_zsl_mode=1
@@ -106,7 +106,7 @@ ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.hardware.vulkan=mali
-ro.gfx.driver.0=com.mediatek.mt6893.gamedriver
+ro.gfx.driver.0=com.mediatek.mt6877.gamedriver
 ro.vendor.smvr.p2batch.vga=32
 ro.vendor.smvr.p2batch.hd=8
 ro.vendor.smvr.p2batch.fhd=4
@@ -126,7 +126,7 @@ ro.vendor.mtk_config_max_dram_size=0x800000000
 drm.service.enabled=true
 ro.vendor.mtk_widevine_drm_l1_support=1
 ro.vendor.mtk_sec_video_path_support=1
-ro.netflix.bsp_rev=MTK6893-32816-1
+ro.netflix.bsp_rev=MTK6877-32816-1
 ro.vendor.mtk_mvpu_security_support=0
 
 # FM Radio
@@ -194,7 +194,7 @@ vendor.mtk.vdec.waitkeyframeforplay=15
 media.c2.dmabuf.padding=3072
 
 # Mediatek
-ro.vendor.mediatek.platform=MT6893
+ro.vendor.mediatek.platform=MT6877
 ro.vendor.mediatek.version.branch=alps-mp-s0.mp1.tc16sp-pr8
 ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc16sp-pr8-V1.5
 ro.vendor.mtk_prefer_64bit_proc=0
