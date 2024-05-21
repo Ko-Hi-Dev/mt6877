@@ -300,8 +300,10 @@ PRODUCT_COPY_FILES += \
 # Power
 #$(call inherit-product, hardware/oplus/power-libperfmgr/power-libperfmgr.mk)
 
+# Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-mediatek
+    android.hardware.power-service.mediatek-libperfmgr \
+    android.hardware.power@1.2.vendor:64
 
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
@@ -410,10 +412,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.1.vendor:64 \
-    android.hardware.usb.gadget@1.1.vendor:64
-
-
+    android.hardware.usb@1.3-service-mediatekv2
 
 # Viper4Android
 PRODUCT_COPY_FILES += \
