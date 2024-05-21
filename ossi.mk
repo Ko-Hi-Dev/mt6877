@@ -390,6 +390,8 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH) \
+    $(COMMON_PATH) \
     hardware/oplus \
     hardware/google/interfaces \
     hardware/google/pixel \
