@@ -216,7 +216,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.mt6893
+    android.hardware.light-service.mt6877
 
 # Media
 PRODUCT_PACKAGES += \
