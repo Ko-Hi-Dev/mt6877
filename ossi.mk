@@ -174,6 +174,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-V1-ndk.vendor \
     android.hardware.gnss@2.1.vendor
 
+PRODUCT_PACKAGES += \
+    android.hardware.gnss-service.mediatek
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.safe_union@1.0.vendor \
@@ -254,6 +257,7 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
+    android.hardware.nfc-service.nxp \
     android.hardware.nfc@1.2-service \
     com.android.nfc_extras \
     NfcNci \
@@ -515,9 +519,11 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     hostapd \
     hostapd_cli \
-    libkeystore-wifi-hidl \
-    libkeystore-engine-wifi-hidl
-    
+    libwifi-hal-mt66xx
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/hidl/vendor_hals.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_hals/vendor_hals.xml
+
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(COMMON_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
