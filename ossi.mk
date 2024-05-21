@@ -479,13 +479,13 @@ PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.oplus
 
 # USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3.vendor \
-    android.hardware.usb.gadget@1.1.vendor
+#PRODUCT_PACKAGES += \
+#    android.hardware.usb@1.3.vendor \
+#   android.hardware.usb.gadget@1.1.vendor
 
 # Vibrator
 #PRODUCT_PACKAGES += \
- #   android.hardware.vibrator-service.mt6877
+   android.hardware.vibrator-service.mt6877
 
 # Viper4Android
 PRODUCT_COPY_FILES += \
