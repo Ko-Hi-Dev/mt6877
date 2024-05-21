@@ -363,7 +363,7 @@ PRODUCT_COPY_FILES += \
 #$(call inherit-product, hardware/oplus/power-libperfmgr/power-libperfmgr.mk)
 
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-mediatek
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
@@ -518,6 +518,7 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     hostapd \
     hostapd_cli \
+    libwifi-hal-mt66xx
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
