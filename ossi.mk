@@ -174,9 +174,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-V1-ndk.vendor \
     android.hardware.gnss@2.1.vendor
 
-PRODUCT_PACKAGES += \
-    android.hardware.gnss-service.mediatek
-
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.safe_union@1.0.vendor \
@@ -257,7 +254,6 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc-service.nxp \
     android.hardware.nfc@1.2-service \
     com.android.nfc_extras \
     NfcNci \
@@ -300,10 +296,6 @@ PRODUCT_COPY_FILES += \
 # OplusDoze
 PRODUCT_PACKAGES += \
     OplusDoze
-
-# MTK InCallService
-PRODUCT_PACKAGES += \
-    MtkInCallService
 
 # fastbootd
 PRODUCT_PACKAGES += \
