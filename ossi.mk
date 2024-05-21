@@ -390,7 +390,7 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    hardware/oplus
+    hardware/oplus \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/mediatek \
