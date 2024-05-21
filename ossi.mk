@@ -129,8 +129,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
     android.hardware.graphics.composer@2.1-resources.vendor \
     android.hardware.graphics.composer@2.2-resources.vendor \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
     android.hardware.graphics.composer@2.3-service \
     android.hidl.allocator@1.0.vendor \
     android.hardware.memtrack-service.mediatek-mali \
@@ -218,15 +216,13 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libcodec2_soft_common.vendor \
     android.hardware.media.c2@1.0.vendor \
     android.hardware.media.c2@1.1.vendor \
     android.hardware.media.c2@1.2.vendor \
     libavservices_minijail.vendor \
     libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
-    libstagefright_bufferpool@2.0.1.vendor \
-    libstagefright_softomx_plugin.vendor
+    libstagefright_bufferpool@2.0.1.vendor
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -487,7 +483,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 #PRODUCT_PACKAGES += \
- #   android.hardware.vibrator-service.mt6877
+    android.hardware.vibrator-service.mt6877
 
 # Viper4Android
 PRODUCT_COPY_FILES += \
