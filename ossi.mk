@@ -486,6 +486,8 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
+    android.hardware.usb-servie.mediatek-legacy
+    android.hardware.usb-V3-ndk
     android.hardware.usb-service.mediatek \
     android.hardware.usb.gadget-service.mediatek \
     android.hardware.usb@1.3-service-mediatekv2
