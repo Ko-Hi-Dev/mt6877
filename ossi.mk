@@ -428,7 +428,6 @@ PRODUCT_PACKAGES += \
 # Wi-Fi
 PRODUCT_PACKAGES += \
     hostapd \
-    android.hardware.wifi@1.0-service.RM6785 \
     android.hardware.wifi.supplicant@1.3.vendor:64 \
     libkeystore-engine-wifi-hidl:64 \
     libkeystore-wifi-hidl:64
