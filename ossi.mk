@@ -165,6 +165,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.gatekeeper@1.0-impl
 
+#hwservice nags about boot
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.0
+
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.0.vendor \
