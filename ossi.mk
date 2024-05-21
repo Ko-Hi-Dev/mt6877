@@ -177,6 +177,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.0.vendor \
     android.hardware.gnss@2.1.vendor
 
+PRODUCT_PACKAGES += \
+    android.hardware.gnss-service.mediatek
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.safe_union@1.0.vendor \
