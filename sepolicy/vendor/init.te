@@ -28,6 +28,6 @@ allow init system_file:file { create };
 allow init system_file:file { setattr };
 allow init system_file:file { execute_no_trans };
 allow init vendor_shell_exec:file { execute_no_trans };
-allow init socket_device:sock_file { create setattr } 
+allow init socket_device:sock_file { create setattr };
 
 get_prop(init, exported_system_prop)
