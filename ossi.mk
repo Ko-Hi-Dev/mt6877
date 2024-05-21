@@ -85,13 +85,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.6.vendor:64 \
     android.hardware.camera.provider@2.6.vendor:64
 
-
-PRODUCT_PACKAGES += \
-    libshim_audio \
-    libshim_camera_metadata \
-    libshim_mtkcam \
-    libshim_utils
-
 # ConfigStore
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -323,12 +316,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.mediatek-libperfmgr \
     android.hardware.power@1.2.vendor:64
-
-PRODUCT_PACKAGES += \
-    libmtkperf_client_vendor \
-    libmtkperf_client
 
 PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.0.vendor \
@@ -416,10 +404,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl:64 \
     android.hardware.thermal@2.0.vendor:64
 
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.mt6877
-
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
@@ -440,11 +424,6 @@ PRODUCT_COPY_FILES += \
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
-
-# VNDK
-PRODUCT_PACKAGES += \
-    libutils-v32 \
-    libui-v32
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
