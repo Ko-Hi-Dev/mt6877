@@ -169,16 +169,10 @@ PRODUCT_PACKAGES += \
 
 # GNSS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss.measurement_corrections@1.0.vendor \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor \
-    android.hardware.gnss@1.0.vendor \
-    android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.0.vendor \
+    android.hardware.gnss-V1-ndk.vendor \
     android.hardware.gnss@2.1.vendor
-
-PRODUCT_PACKAGES += \
-    android.hardware.gnss-service.mediatek
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -366,7 +360,7 @@ PRODUCT_COPY_FILES += \
 #$(call inherit-product, hardware/oplus/power-libperfmgr/power-libperfmgr.mk)
 
 PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub
+    android.hardware.power-service-mediatek
 
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
@@ -486,11 +480,8 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb-servie.mediatek-legacy \
-    android.hardware.usb-V3-ndk \
-    android.hardware.usb-service.mediatek \
-    android.hardware.usb.gadget-service.mediatek \
-    android.hardware.usb@1.3-service-mediatekv2
+    android.hardware.usb@1.3.vendor \
+    android.hardware.usb.gadget@1.1.vendor
 
 # Vibrator
 #PRODUCT_PACKAGES += \
@@ -524,6 +515,9 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     hostapd \
     hostapd_cli \
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/hidl/vendor_hals.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_hals/vendor_hals.xml
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
