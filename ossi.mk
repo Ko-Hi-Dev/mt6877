@@ -133,7 +133,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.graphics.composer@2.3-service \
     android.hidl.allocator@1.0.vendor \
-    android.hardware.memtrack-service.mediatek-mali \
     android.hardware.graphics.common-V2-ndk_platform.vendor \
     android.hardware.graphics.common-V2-ndk.vendor \
     disable_configstore
