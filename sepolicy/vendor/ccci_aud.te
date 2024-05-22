@@ -1,1 +1,1 @@
-allow ccci_aud ccci_aud_device:chr_file { read write open ioctl map };
+allow ccci_aud ccci_aud_device:chr_file { read write open map };
