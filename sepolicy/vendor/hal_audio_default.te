@@ -25,6 +25,8 @@ allow hal_audio_default hal_power_hwservice:hwservice_manager find;
 
 allow hal_audio_default ccci_aud_device:chr_file { read write open map ioctl };
 
+allow ccci_aud_device ccci_aud_device:chr_file { read write open map ioctl };
+
 get_prop(hal_audio_default, vendor_mtk_wmt_prop)
 get_prop(hal_audio_default, vendor_mtk_audiohal_prop)
 get_prop(hal_audio_default, vendor_mtk_default_prop)
