@@ -494,24 +494,6 @@
             <instance>mtkRsu2</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.trustonic.tee</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>ITee</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-    <transport>hwbinder</transport>
-        <name>vendor.trustonic.tee.tui</name>
-        <version>1.0</version>
-        <interface>
-            <name>ITui</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
    <hal override="true" format="hidl">
         <name>android.hardware.secure_element</name>
         <transport>hwbinder</transport>
