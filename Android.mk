@@ -30,6 +30,8 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@mkdir -p $(TARGET_OUT_VENDOR)/lib64/hw
 	@mkdir -p $(TARGET_OUT_VENDOR)/lib/egl
 	@mkdir -p $(TARGET_OUT_VENDOR)/lib64/egl
+	@mkdir -p $(TARGET_OUT_VENDOR)/lib/mt6877
+	@mkdir -p $(TARGET_OUT_VENDOR)/lib64/mt6877
 
 	@ln -sf libSoftGatekeeper.so $(TARGET_OUT_VENDOR)/lib/hw/gatekeeper.default.so
 	@ln -sf libSoftGatekeeper.so $(TARGET_OUT_VENDOR)/lib64/hw/gatekeeper.default.so
