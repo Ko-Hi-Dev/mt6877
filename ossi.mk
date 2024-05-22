@@ -363,10 +363,8 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/publiclibraries/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Power
-$(call inherit-product, hardware/oplus/power-libperfmgr/power-libperfmgr.mk)
-
 PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub
+    android.hardware.power-service-mediatek \
 
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
