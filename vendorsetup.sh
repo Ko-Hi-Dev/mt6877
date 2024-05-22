@@ -18,8 +18,6 @@ git clone https://github.com/oplus-ossi-development/android_hardware_mediatek.gi
 
 git clone https://github.com/oplus-ossi-development/android_packages_apps_OneplusParts.git packages/apps/OneplusParts
 
-git clone https://github.com/oplus-ossi-development/android_hardware_mediatek_gnss.git hardware/mediatek/gnss
-
 git clone https://github.com/oplus-ossi-development/android_hardware_mediatek_wlan.git hardware/mediatek/wlan
 
 git clone -b lineage-21 https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git device/mediatek/sepolicy_vndr
