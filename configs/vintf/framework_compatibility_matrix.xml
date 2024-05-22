@@ -1056,16 +1056,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
-        <name>android.hardware.graphics.allocator</name>
-        <version>2.0</version>
-        <version>3.0</version>
-        <version>4.0</version>
-        <interface>
-            <name>IAllocator</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.olc</name>
         <version>2.0</version>
@@ -1247,12 +1237,11 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
-        <name>android.hardware.graphics.allocator</name>
-        <version>2.0</version>
-        <version>3.0</version>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.memtrack</name>
+        <version>1.0</version>
         <interface>
-            <name>IAllocator</name>
+            <name>IMemtrack</name>
             <instance>default</instance>
         </interface>
     </hal>
