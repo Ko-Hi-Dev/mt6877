@@ -6,7 +6,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter ivan,$(TARGET_DEVICE)),)
+ifneq ($(filter denniz cupida,$(TARGET_DEVICE)),)
 
 subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
 $(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
@@ -29,50 +29,50 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@mkdir -p $(TARGET_OUT_VENDOR)/lib/egl
 	@mkdir -p $(TARGET_OUT_VENDOR)/lib64/egl
 
-	@cp libSoftGatekeeper.so $(TARGET_OUT_VENDOR)/lib/hw/gatekeeper.default.so
-	@cp libSoftGatekeeper.so $(TARGET_OUT_VENDOR)/lib64/hw/gatekeeper.default.so
-	@cp libMcGatekeeper.so $(TARGET_OUT_VENDOR)/lib/hw/gatekeeper.trustonic.so
-	@cp libMcGatekeeper.so $(TARGET_OUT_VENDOR)/lib64/hw/gatekeeper.trustonic.so
-	@cp kmsetkey.trustonic.so $(TARGET_OUT_VENDOR)/lib/hw/kmsetkey.default.so
-	@cp kmsetkey.trustonic.so $(TARGET_OUT_VENDOR)/lib64/hw/kmsetkey.default.so
-	@cp mt6877/libdpframework.so $(TARGET_OUT_VENDOR)/lib/libdpframework.so
-	@cp mt6877/libdpframework.so $(TARGET_OUT_VENDOR)/lib64/libdpframework.so
-	@cp mt6877/libpq_prot.so $(TARGET_OUT_VENDOR)/lib/libpq_prot.so
-	@cp mt6877/libpq_prot.so $(TARGET_OUT_VENDOR)/lib64/libpq_prot.so
-	@cp mt6877/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib/libmtk_drvb.so
-	@cp mt6877/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib64/libmtk_drvb.so
-	@cp mt6877/libaiselector.so $(TARGET_OUT_VENDOR)/lib/libaiselector.so
-	@cp mt6877/libaiselector.so $(TARGET_OUT_VENDOR)/lib64/libaiselector.so
-	@cp mt6877/libgpudataproducer.so $(TARGET_OUT_VENDOR)/lib/libgpudataproducer.so
-	@cp mt6877/libgpudataproducer.so $(TARGET_OUT_VENDOR)/lib64/libgpudataproducer.so
-	@cp mt6877/libnir_neon_driver.so $(TARGET_OUT_VENDOR)/lib/libnir_neon_driver.so
-	@cp mt6877/libnir_neon_driver.so $(TARGET_OUT_VENDOR)/lib64/libnir_neon_driver.so
-	@cp mt6877/libneuron_platform.vpu.so $(TARGET_OUT_VENDOR)/lib/libneuron_platform.vpu.so
-	@cp mt6877/libneuron_platform.vpu.so $(TARGET_OUT_VENDOR)/lib64/libneuron_platform.vpu.so
-	@cp mt6877/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib/egl/libGLES_mali.so
-	@cp mt6877/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib64/egl/libGLES_mali.so
-	@cp mt6877/arm.graphics-V1-ndk_platform.so $(TARGET_OUT_VENDOR)/lib/arm.graphics-V1-ndk_platform.so
-	@cp mt6877/arm.graphics-V1-ndk_platform.so $(TARGET_OUT_VENDOR)/lib64/arm.graphics-V1-ndk_platform.so
-	@cp mt6877/arm.graphics-ndk_platform.so $(TARGET_OUT_VENDOR)/lib/arm.graphics-ndk_platform.so
-	@cp mt6877/arm.graphics-ndk_platform.so $(TARGET_OUT_VENDOR)/lib64/arm.graphics-ndk_platform.so
-	@cp mt6877/libneuron_runtime.so $(TARGET_OUT_VENDOR)/lib64/libneuron_runtime.so
-	@cp mt6877/libneuron_runtime.5.so $(TARGET_OUT_VENDOR)/lib64/libneuron_runtime.5.so
-	@cp mt6877/vulkan.mali.so $(TARGET_OUT_VENDOR)/lib/hw/vulkan.mali.so
-	@cp mt6877/vulkan.mali.so $(TARGET_OUT_VENDOR)/lib64/hw/vulkan.mali.so
-	@cp mt6877/android.hardware.graphics.allocator@4.0-impl-mediatek.so $(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
-	@cp mt6877/android.hardware.graphics.allocator@4.0-impl-mediatek.so $(TARGET_OUT_VENDOR)/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
-	@cp mt6877/android.hardware.graphics.mapper@4.0-impl-mediatek.so $(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
-	@cp mt6877/android.hardware.graphics.mapper@4.0-impl-mediatek.so $(TARGET_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
-	@cp /vendor/lib/egl/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib/hw/vulkan.mt6877.so
-	@cp /vendor/lib64/egl/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib64/hw/vulkan.mt6877.so
-	@cp mt6877/libmcv_runtime.mtk.so $(TARGET_OUT_VENDOR)/lib64/libmcv_runtime.mtk.so
-	@cp mt6877/libmnl.so $(TARGET_OUT_VENDOR)/lib64/libmnl.so
-	@cp mt6877/libmdla_ut.so $(TARGET_OUT_VENDOR)/lib64/libmdla_ut.so
-	@cp mt6877/libdpframework.so $(TARGET_OUT_VENDOR)/lib64/libdpframework.so
-	@cp mt6877/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib64/libmtk_drvb.so
-	@cp mt6877/libnir_neon_driver.so $(TARGET_OUT_VENDOR)/lib64/libnir_neon_driver.so
-	@cp mt6877/libpq_prot.so $(TARGET_OUT_VENDOR)/lib64/libpq_prot.so
-	@cp mt6877/libdpframework.so $(TARGET_OUT_VENDOR)/lib64/libdpframework.so
+	@ln -sf libSoftGatekeeper.so $(TARGET_OUT_VENDOR)/lib/hw/gatekeeper.default.so
+	@ln -sf libSoftGatekeeper.so $(TARGET_OUT_VENDOR)/lib64/hw/gatekeeper.default.so
+	@ln -sf libMcGatekeeper.so $(TARGET_OUT_VENDOR)/lib/hw/gatekeeper.trustonic.so
+	@ln -sf libMcGatekeeper.so $(TARGET_OUT_VENDOR)/lib64/hw/gatekeeper.trustonic.so
+	@ln -sf kmsetkey.trustonic.so $(TARGET_OUT_VENDOR)/lib/hw/kmsetkey.default.so
+	@ln -sf kmsetkey.trustonic.so $(TARGET_OUT_VENDOR)/lib64/hw/kmsetkey.default.so
+	@ln -sf mt6877/libdpframework.so $(TARGET_OUT_VENDOR)/lib/libdpframework.so
+	@ln -sf mt6877/libdpframework.so $(TARGET_OUT_VENDOR)/lib64/libdpframework.so
+	@ln -sf mt6877/libpq_prot.so $(TARGET_OUT_VENDOR)/lib/libpq_prot.so
+	@ln -sf mt6877/libpq_prot.so $(TARGET_OUT_VENDOR)/lib64/libpq_prot.so
+	@ln -sf mt6877/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib/libmtk_drvb.so
+	@ln -sf mt6877/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib64/libmtk_drvb.so
+	@ln -sf mt6877/libaiselector.so $(TARGET_OUT_VENDOR)/lib/libaiselector.so
+	@ln -sf mt6877/libaiselector.so $(TARGET_OUT_VENDOR)/lib64/libaiselector.so
+	@ln -sf mt6877/libgpudataproducer.so $(TARGET_OUT_VENDOR)/lib/libgpudataproducer.so
+	@ln -sf mt6877/libgpudataproducer.so $(TARGET_OUT_VENDOR)/lib64/libgpudataproducer.so
+	@ln -sf mt6877/libnir_neon_driver.so $(TARGET_OUT_VENDOR)/lib/libnir_neon_driver.so
+	@ln -sf mt6877/libnir_neon_driver.so $(TARGET_OUT_VENDOR)/lib64/libnir_neon_driver.so
+	@ln -sf mt6877/libneuron_platform.vpu.so $(TARGET_OUT_VENDOR)/lib/libneuron_platform.vpu.so
+	@ln -sf mt6877/libneuron_platform.vpu.so $(TARGET_OUT_VENDOR)/lib64/libneuron_platform.vpu.so
+	@ln -sf mt6877/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib/egl/libGLES_mali.so
+	@ln -sf mt6877/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib64/egl/libGLES_mali.so
+	@ln -sf mt6877/arm.graphics-V1-ndk_platform.so $(TARGET_OUT_VENDOR)/lib/arm.graphics-V1-ndk_platform.so
+	@ln -sf mt6877/arm.graphics-V1-ndk_platform.so $(TARGET_OUT_VENDOR)/lib64/arm.graphics-V1-ndk_platform.so
+	@ln -sf mt6877/arm.graphics-ndk_platform.so $(TARGET_OUT_VENDOR)/lib/arm.graphics-ndk_platform.so
+	@ln -sf mt6877/arm.graphics-ndk_platform.so $(TARGET_OUT_VENDOR)/lib64/arm.graphics-ndk_platform.so
+	@ln -sf mt6877/libneuron_runtime.so $(TARGET_OUT_VENDOR)/lib64/libneuron_runtime.so
+	@ln -sf mt6877/libneuron_runtime.5.so $(TARGET_OUT_VENDOR)/lib64/libneuron_runtime.5.so
+	@ln -sf mt6877/vulkan.mali.so $(TARGET_OUT_VENDOR)/lib/hw/vulkan.mali.so
+	@ln -sf mt6877/vulkan.mali.so $(TARGET_OUT_VENDOR)/lib64/hw/vulkan.mali.so
+	@ln -sf mt6877/android.hardware.graphics.allocator@4.0-impl-mediatek.so $(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
+	@ln -sf mt6877/android.hardware.graphics.allocator@4.0-impl-mediatek.so $(TARGET_OUT_VENDOR)/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
+	@ln -sf mt6877/android.hardware.graphics.mapper@4.0-impl-mediatek.so $(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
+	@ln -sf mt6877/android.hardware.graphics.mapper@4.0-impl-mediatek.so $(TARGET_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
+	@ln -sf /vendor/lib/egl/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib/hw/vulkan.mt6877.so
+	@ln -sf /vendor/lib64/egl/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib64/hw/vulkan.mt6877.so
+	@ln -sf mt6877/libmcv_runtime.mtk.so $(TARGET_OUT_VENDOR)/lib64/libmcv_runtime.mtk.so
+	@ln -sf mt6877/libmnl.so $(TARGET_OUT_VENDOR)/lib64/libmnl.so
+	@ln -sf mt6877/libmdla_ut.so $(TARGET_OUT_VENDOR)/lib64/libmdla_ut.so
+	@ln -sf mt6877/libdpframework.so $(TARGET_OUT_VENDOR)/lib64/libdpframework.so
+	@ln -sf mt6877/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib64/libmtk_drvb.so
+	@ln -sf mt6877/libnir_neon_driver.so $(TARGET_OUT_VENDOR)/lib64/libnir_neon_driver.so
+	@ln -sf mt6877/libpq_prot.so $(TARGET_OUT_VENDOR)/lib64/libpq_prot.so
+	@ln -sf mt6877/libdpframework.so $(TARGET_OUT_VENDOR)/lib64/libdpframework.so
 
 	$(hide) touch $@
 
