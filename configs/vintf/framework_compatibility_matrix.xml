@@ -1261,7 +1261,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-<compatibility-matrix version="4.0" type="framework" level="5">
     <hal format="hidl" optional="true">
         <name>android.hardware.atrace</name>
         <version>1.0</version>
