@@ -491,7 +491,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 #PRODUCT_PACKAGES += \
- #   android.hardware.vibrator-service.mt6877
+    android.hardware.vibrator-service.mt6877
 
 # Viper4Android
 PRODUCT_COPY_FILES += \
