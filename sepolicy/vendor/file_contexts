@@ -300,7 +300,7 @@
 /dev/block/sdc16                                                                                        u:object_r:oplus_block_device:s0
 /mnt/vendor/persist/engineermode(/.*)?                                                                  u:object_r:persist_engineer_file:s0
 /storage/persist/engineermode(/.*)?                                                                     u:object_r:persist_engineer_file:s0
-/dev/__properties__.*											    u_object_r:storage_config_prop:s0
+/dev/__properties__.*											    u:object_r:storage_config_prop:s0
 
 # Fingerprint
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.biometrics\.fingerprint@2\.1-service                  u:object_r:hal_fingerprint_default_exec:s0
