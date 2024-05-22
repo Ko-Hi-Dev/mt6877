@@ -363,8 +363,9 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/publiclibraries/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Power
+
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-mediatek \
+        android.hardware.power-service-mediatek \
 
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \

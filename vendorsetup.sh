@@ -12,15 +12,13 @@ git clone https://gitlab.com/Ko_Hi/mt6877_vendor.git vendor/oplus/mt6877-common
 
 git clone https://gitlab.com/Ko_Hi/mt6877.git vendor/oplus/ivan
 
-git clone -b lineage-21 https://github.com/LineageOS/android_hardware_oplus.git hardware/oplus
+git clone -b lineage-20 https://github.com/LineageOS/android_hardware_oplus.git hardware/oplus
 
-git clone https://github.com/oplus-ossi-development/android_hardware_mediatek.git hardware/mediatek
+git clone -b lineage-20 https://github.com/oplus-ossi-development/android_hardware_mediatek.git hardware/mediatek
 
 git clone https://github.com/oplus-ossi-development/android_packages_apps_OneplusParts.git packages/apps/OneplusParts
 
-git clone https://github.com/oplus-ossi-development/android_hardware_mediatek_wlan.git hardware/mediatek/wlan
-
-git clone -b lineage-21 https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git device/mediatek/sepolicy_vndr
+git clone -b lineage-20 https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git device/mediatek/sepolicy_vndr
 
 
 # clang
