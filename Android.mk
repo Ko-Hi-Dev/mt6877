@@ -33,7 +33,7 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@mkdir -p $(TARGET_OUT_VENDOR)/lib/mt6877
 	@mkdir -p $(TARGET_OUT_VENDOR)/lib64/mt6877
 
-	@ln -sf libSoftGatekeeper.so $(TARGET_OUT_VENDOR)/lib/hw/gatekeeper.default.so
+	@ln -sf /vendor/lib/libSoftGatekeeper.so $(TARGET_OUT_VENDOR)/lib/hw/gatekeeper.default.so
 	@ln -sf /vendor/lib64/libSoftGatekeeper.so $(TARGET_OUT_VENDOR)/lib64/hw/gatekeeper.default.so
 	@ln -sf /vendor/lib/libMcGatekeeper.so $(TARGET_OUT_VENDOR)/lib/hw/gatekeeper.trustonic.so
 	@ln -sf /vendor/lib64/libMcGatekeeper.so $(TARGET_OUT_VENDOR)/lib64/hw/gatekeeper.trustonic.so
@@ -43,7 +43,7 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@ln -sf /vendor/lib64/mt6877/libdpframework.so $(TARGET_OUT_VENDOR)/lib64/libdpframework.so
 	@ln -sf /vendor/lib/mt6877/libpq_prot.so $(TARGET_OUT_VENDOR)/lib/libpq_prot.so
 	@ln -sf /vendor/lib64/mt6877/libpq_prot.so $(TARGET_OUT_VENDOR)/lib64/libpq_prot.so
-	@ln -sf /vendor/lib/mt6877/lib/mtk_drvb.so $(TARGET_OUT_VENDOR)/lib/libmtk_drvb.so
+	@ln -sf /vendor/lib/mt6877/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib/libmtk_drvb.so
 	@ln -sf /vendor/lib64/mt6877/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib64/libmtk_drvb.so
 	@ln -sf /vendor/lib/mt6877/libaiselector.so $(TARGET_OUT_VENDOR)/lib/libaiselector.so
 	@ln -sf /vendor/lib64/mt6877/libaiselector.so $(TARGET_OUT_VENDOR)/lib64/libaiselector.so
@@ -61,7 +61,7 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@ln -sf /vendor/lib64/mt6877/arm.graphics-ndk_platform.so $(TARGET_OUT_VENDOR)/lib64/arm.graphics-ndk_platform.so
 	@ln -sf /vendor/lib64/mt6877/libneuron_runtime.so $(TARGET_OUT_VENDOR)/lib64/libneuron_runtime.so
 	@ln -sf /vendor/lib64/mt6877/libneuron_runtime.5.so $(TARGET_OUT_VENDOR)/lib64/libneuron_runtime.5.so
-	@ln -sf /vendor/lib64/mt6877/hw/vulkan.mali.so $(TARGET_OUT_VENDOR)/lib/hw/vulkan.mali.so
+	@ln -sf /vendor/lib64/mt6877/vulkan.mali.so $(TARGET_OUT_VENDOR)/lib/hw/vulkan.mali.so
 	@ln -sf /vendor/lib64/ mt6877/vulkan.mali.so $(TARGET_OUT_VENDOR)/lib64/hw/vulkan.mali.so
 	@ln -sf /vendor/lib64/mt6877/android.hardware.graphics.allocator@4.0-impl-mediatek.so $(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 	@ln -sf /vendor/lib64/mt6877/android.hardware.graphics.allocator@4.0-impl-mediatek.so $(TARGET_OUT_VENDOR)/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
