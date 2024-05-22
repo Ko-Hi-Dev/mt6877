@@ -59,13 +59,15 @@
         </interface>
         <fqname>@4.0::IAllocator/default</fqname>
     </hal>
-    <hal format="hidl" optional="false">
+    <hal format="hidl">
         <name>android.hardware.graphics.composer</name>
-        <version>2.1-4</version>
+        <transport>hwbinder</transport>
+        <version>2.1</version>
         <interface>
             <name>IComposer</name>
             <instance>default</instance>
         </interface>
+        <fqname>@2.1::IComposer/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.graphics.mapper</name>
