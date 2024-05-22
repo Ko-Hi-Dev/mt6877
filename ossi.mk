@@ -124,6 +124,7 @@ SYSTEMUI_OPTIMIZE_JAVA := true
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.allocator@2.0.vendor \
     android.hardware.graphics.allocator@3.0.vendor \
     android.hardware.graphics.allocator@4.0.vendor \
