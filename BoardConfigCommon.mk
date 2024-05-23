@@ -71,7 +71,7 @@ BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 
 # NFC
 DEVICE_MANIFEST_SKUS += nfc
-DEVICE_MANIFEST_NFC_FILES := $(COMMON_PATH)/manifest_nfc.xml
+DEVICE_MANIFEST_NFC_FILES := $(COMMON_PATH)/configs/vintf/manifest_nfc.xml
 
 # Compatibility matrix
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/framework_compatibility_matrix.xml
