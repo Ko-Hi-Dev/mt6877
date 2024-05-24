@@ -19,6 +19,13 @@
         </interface>
         <fqname>@7.0::IEffectsFactory/default</fqname>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.power</name>
+        <interface>
+            <name>IPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>
