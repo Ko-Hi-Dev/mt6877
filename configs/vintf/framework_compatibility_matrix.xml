@@ -14,7 +14,7 @@
             <instance>ozoaudio</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
+    <hal format="hidl" optional="true">
         <name>android.hardware.power</name>
         <interface>
             <name>IPower</name>
