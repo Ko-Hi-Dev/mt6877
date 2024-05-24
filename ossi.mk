@@ -364,6 +364,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/publiclibraries/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Power
+$(call inherit-product, device/oplus/mt6877-common/power-libperfmgr/power-libperfmgr.mk)
 
 # Power
 PRODUCT_PACKAGES += \
