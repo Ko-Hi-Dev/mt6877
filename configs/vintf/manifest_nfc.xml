@@ -17,7 +17,7 @@
     <hal format="hidl">
         <name>android.hardware.boot</name>
         <transport>hwbinder</transport>
-        <fqname>@1.1::IBootControl/default</fqname>
+        <fqname>@1.0::IBootControl/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.camera.provider</name>
@@ -53,14 +53,6 @@
         <name>android.hardware.keymaster</name>
         <transport>hwbinder</transport>
         <fqname>@4.0::IKeymasterDevice/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>android.system.keystore2</name>
-        <interface>
-            <name>IKeystoreService</name>
-            <transport>hwbinder</transport>
-            <instance>default</instance>
-        </interface>
     </hal>
     <hal format="hidl">
         <name>android.hardware.media.omx</name>
@@ -202,6 +194,21 @@
         <name>vendor.mediatek.hardware.pq</name>
         <transport>hwbinder</transport>
         <fqname>@2.13::IPictureQuality/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.videotelephony</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IVideoTelephony/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.citsensorservice</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::ICitSensorService/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.microtrust.hardware.thh</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.0::IThhDevice/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.nfc</name>

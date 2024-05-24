@@ -405,7 +405,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     $(COMMON_PATH) \
     hardware/mediatek \
-    hardware/oplus
 
 # IMS
 PRODUCT_BOOT_JARS += \
