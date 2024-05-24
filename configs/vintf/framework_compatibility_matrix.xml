@@ -15,7 +15,6 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.configstore</name>
-        <version>1.0</version>
         <interface>
             <name>ISurfaceFlingerConfigs</name>
             <instance>default</instance>
@@ -1188,6 +1187,16 @@
             <name>IStatusProvider</name>
             <instance>default</instance>
         </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.audio.effect</name>
+        <version>7.0</version>
+        <interface>
+            <name>IEffectsFactory</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@7.0::IEffectsFactory/default</fqname>
+        <fqname>@7.1::IEffectsFactory/default</fqname>
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.virtual_device.camera.manager</name>
