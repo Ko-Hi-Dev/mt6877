@@ -95,9 +95,9 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth.audio-impl \
     android.hardware.bluetooth@1.1.vendor \
-    android.hardware.bluetooth.audio-impl
+    libbluetooth_audio_session
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0.vendor \
@@ -162,24 +162,17 @@ PRODUCT_PACKAGES += \
 
 # GNSS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss.measurement_corrections@1.0.vendor \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor \
-    android.hardware.gnss@1.0.vendor \
-    android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.0.vendor \
+    android.hardware.gnss-V1-ndk.vendor \
     android.hardware.gnss@2.1.vendor
 
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.safe_union@1.0.vendor \
+    android.hidl.allocator@1.0.vendor \
     libhidltransport \
-    libhardware \
-    libhwbinder \
     libhidltransport.vendor \
-    libhardware.vendor \
-    libhwbinder.vendor
-
+    libhwbinder.vendor \
 # Health
 PRODUCT_PACKAGES += \
    android.hardware.health@2.1-service \
@@ -187,20 +180,11 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-   android.hardware.keymaster-V3-ndk_platform.vendor \
-   android.hardware.keymaster@3.0.vendor \
-   android.hardware.keymaster@4.0.vendor \
-   android.hardware.keymaster@4.1.vendor \
-   libkeymaster4.vendor:64 \
-   libkeymaster4support.vendor:64 \
-   libkeymaster4_1support.vendor:64 \
-   libkeymaster41.vendor:64 \
-   libkeymaster_messages.vendor:64 \
-   libkeymaster_portable.vendor:64 \
-   libpuresoftkeymasterdevice.vendor:64 \
-   libsoft_attestation_cert.vendor:64 \
-   libkeystore-wifi-hidl \
-   libkeystore-engine-wifi-hidl
+    android.hardware.keymaster@4.0.vendor \
+    libkeymaster4support.vendor \
+    libkeymaster4.vendor \
+    libpuresoftkeymasterdevice.vendor \
+    libsoft_attestation_cert.vendor
 
 # Lights
 PRODUCT_PACKAGES += \
