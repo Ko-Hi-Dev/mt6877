@@ -358,7 +358,6 @@ PRODUCT_COPY_FILES += \
 # Power
 
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.oplus-libperfmgr \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
 PRODUCT_PACKAGES += \
