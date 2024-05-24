@@ -96,6 +96,10 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.audio-impl
 
+# Camera
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/camera/oplus_camera_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_config
+
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0.vendor \
     android.hardware.camera.device@3.2.vendor \
@@ -292,6 +296,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/permissions/oplus_camera_default_grant_permissions_list.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/oplus_camera_default_grant_permissions_list.xml \
     $(COMMON_PATH)/configs/sysconfig/hiddenapi-package-whitelist-oplus-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-whitelist-oplus-system.xml
 
+# ORMS
+PRODUCT_PACKAGES += \
+    orms_core_config
+
 # OplusDoze
 PRODUCT_PACKAGES += \
     OplusDoze
@@ -371,6 +379,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     $(COMMON_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
+    $(COMMON_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Radio
 PRODUCT_PACKAGES += \
@@ -513,6 +522,10 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     hostapd \
     hostapd_cli
+
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/hidl/vendor_hals.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_hals/vendor_hals.xml
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
