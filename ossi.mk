@@ -56,27 +56,30 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_USE_SCUDO := true
 
 # Audio
-TARGET_EXCLUDES_AUDIOFX := true
-
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.0-impl \
-    android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
-    android.hardware.soundtrigger@2.3-impl:32
-
-PRODUCT_PACKAGES += \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.common-util.vendor \
+    android.hardware.audio.common@5.0.vendor \
+    android.hardware.audio.common@6.0.vendor \
+    android.hardware.audio.common@6.0-util.vendor \
+    android.hardware.audio.common@7.0.vendor \
+    android.hardware.audio.common@7.0-util.vendor \
+    android.hardware.audio@6.0.vendor \
+    android.hardware.audio@6.0-util.vendor \
+    android.hardware.audio@7.0-util.vendor \
+    android.hardware.audio@7.0.vendor \
+    android.hardware.soundtrigger@2.3-impl:32 \
     audio.bluetooth.default \
-    audio.primary.default \
-    audio.r_submix.default \
-    audio.usb.default \
-    audio_policy.stub
-
-PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
+    libbluetooth_audio_session \
     libalsautils \
+    libnbaio_mono \
     libtinycompress \
     libdynproc \
-    libhapticgenerator
+    libhapticgenerator \
+    libstagefright_foundation
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -92,9 +95,9 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth@1.1.vendor \
-    libbluetooth_audio_session
+    android.hardware.bluetooth.audio-impl
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0.vendor \
@@ -124,9 +127,16 @@ SYSTEMUI_OPTIMIZE_JAVA := true
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0.vendor \
+    android.hardware.graphics.allocator@3.0.vendor \
     android.hardware.graphics.allocator@4.0.vendor \
+    android.hardware.graphics.composer@2.2-resources.vendor \
     android.hardware.graphics.composer@2.3-service \
+    android.hidl.allocator@1.0.vendor \
     android.hardware.memtrack-service.mediatek-mali \
+    android.hardware.graphics.common-V2-ndk_platform.vendor \
+    android.hardware.graphics.common-V2-ndk.vendor \
+    disable_configstore
 
 # Display saturation adjust
 PRODUCT_VENDOR_PROPERTIES += \
@@ -135,7 +145,14 @@ PRODUCT_VENDOR_PROPERTIES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
-    android.hardware.drm@1.4.vendor
+    android.hardware.drm@1.0.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.4.vendor \
+    libmockdrmcryptoplugin \
+    libdrm.vendor \
+    libdrm
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -152,17 +169,24 @@ PRODUCT_PACKAGES += \
 
 # GNSS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss.measurement_corrections@1.0.vendor \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor \
-    android.hardware.gnss-V1-ndk.vendor \
+    android.hardware.gnss@1.0.vendor \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.0.vendor \
     android.hardware.gnss@2.1.vendor
 
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.allocator@1.0.vendor \
+    android.hidl.safe_union@1.0.vendor \
     libhidltransport \
+    libhardware \
+    libhwbinder \
     libhidltransport.vendor \
-    libhwbinder.vendor \
+    libhardware.vendor \
+    libhwbinder.vendor
+
 # Health
 PRODUCT_PACKAGES += \
    android.hardware.health@2.1-service \
@@ -170,24 +194,34 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0.vendor \
-    libkeymaster4support.vendor \
-    libkeymaster4.vendor \
-    libpuresoftkeymasterdevice.vendor \
-    libsoft_attestation_cert.vendor
+   android.hardware.keymaster-V3-ndk_platform.vendor \
+   android.hardware.keymaster@3.0.vendor \
+   android.hardware.keymaster@4.0.vendor \
+   android.hardware.keymaster@4.1.vendor \
+   libkeymaster4.vendor:64 \
+   libkeymaster4support.vendor:64 \
+   libkeymaster4_1support.vendor:64 \
+   libkeymaster41.vendor:64 \
+   libkeymaster_messages.vendor:64 \
+   libkeymaster_portable.vendor:64 \
+   libpuresoftkeymasterdevice.vendor:64 \
+   libsoft_attestation_cert.vendor:64 \
+   libkeystore-wifi-hidl \
+   libkeystore-engine-wifi-hidl
 
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.mt6877
 
-
 # Media
 PRODUCT_PACKAGES += \
-    libavservices_minijail_vendor \
-    libcodec2_hidl@1.2.vendor \
-    libcodec2_soft_common.vendor \
+    android.hardware.media.c2@1.0.vendor \
+    android.hardware.media.c2@1.1.vendor \
+    android.hardware.media.c2@1.2.vendor \
+    libavservices_minijail.vendor \
+    libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
-    libstagefright_softomx_plugin.vendor
+    libstagefright_bufferpool@2.0.1.vendor
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -213,6 +247,9 @@ PRODUCT_COPY_FILES += \
 
 # Neural Networks
 PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.0.vendor \
+    android.hardware.neuralnetworks@1.1.vendor \
+    android.hardware.neuralnetworks@1.2.vendor \
     android.hardware.neuralnetworks@1.3.vendor \
     libtextclassifier_hash.vendor
 
