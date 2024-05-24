@@ -62,15 +62,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.configstore</name>
-        <version>1.0</version>
-        <transport>hwbinder</transport>
-        <interface>
-            <name>ISurfaceFlingerConfigs</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="hidl">
         <name>android.hardware.media.omx</name>
         <transport>hwbinder</transport>
