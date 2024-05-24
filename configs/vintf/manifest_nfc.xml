@@ -58,12 +58,14 @@
         <name>android.system.keystore2</name>
         <interface>
             <name>IKeystoreService</name>
+            <transport>hwbinder</transport>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.configstore</name>
         <version>1.0</version>
+        <transport>hwbinder</transport>
         <interface>
             <name>ISurfaceFlingerConfigs</name>
             <instance>default</instance>
