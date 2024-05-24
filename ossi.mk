@@ -152,10 +152,6 @@ PRODUCT_PACKAGES += \
     libdrm.vendor \
     libdrm
 
-# Protobuf
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.oplus
@@ -178,9 +174,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
     android.hardware.gnss@2.0.vendor \
     android.hardware.gnss@2.1.vendor
-
-PRODUCT_PACKAGES += \
-    android.hardware.gnss-service.mediatek
 
 # HIDL
 PRODUCT_PACKAGES += \
