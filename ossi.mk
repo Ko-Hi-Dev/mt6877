@@ -368,8 +368,11 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
 
 # Perf
+PRODUCT_PACKAGES += \
+    libqti-perfd-client
+
+# Perf
 PRODUCT_COPY_FILES += \
-    libqti-perfd-client \
     system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     $(COMMON_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
 
