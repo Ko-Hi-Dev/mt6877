@@ -364,7 +364,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/publiclibraries/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Power
-$(call inherit-product, device/oplus/mt6877-common/power-libperfmgr/power-libperfmgr.mk)
+#$(call inherit-product, device/oplus/mt6877-common/power-libperfmgr/power-libperfmgr.mk)
 
 # Power
 PRODUCT_PACKAGES += \
@@ -373,7 +373,6 @@ PRODUCT_PACKAGES += \
     libmtkperf_client
 
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2.vendor \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
 
 # Perf
