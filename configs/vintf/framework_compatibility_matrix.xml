@@ -6,7 +6,7 @@
             <instance>internal/0</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
+    <hal format="hidl" optional="true">
         <name>android.hardware.configstore</name>
         <version>1.0</version>
         <interface>
