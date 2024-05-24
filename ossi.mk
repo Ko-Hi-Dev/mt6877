@@ -358,7 +358,7 @@ PRODUCT_COPY_FILES += \
 # Power
 
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.oplus-libperfmgr
+    android.hardware.power-service.oplus-libperfmgr \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
 PRODUCT_PACKAGES += \
@@ -369,7 +369,7 @@ PRODUCT_PACKAGES += \
 
 # Perf
 PRODUCT_COPY_FILES += \
-    libqti-perfd-client
+    libqti-perfd-client \
     system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     $(COMMON_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
 
