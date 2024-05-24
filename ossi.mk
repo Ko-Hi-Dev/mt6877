@@ -56,30 +56,27 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_USE_SCUDO := true
 
 # Audio
+TARGET_EXCLUDES_AUDIOFX := true
+
 PRODUCT_PACKAGES += \
-    android.hardware.audio.service \
+    android.hardware.audio@7.0-impl \
     android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio.effect@6.0-impl \
-    android.hardware.audio.common-util.vendor \
-    android.hardware.audio.common@5.0.vendor \
-    android.hardware.audio.common@6.0.vendor \
-    android.hardware.audio.common@6.0-util.vendor \
-    android.hardware.audio.common@7.0.vendor \
-    android.hardware.audio.common@7.0-util.vendor \
-    android.hardware.audio@6.0.vendor \
-    android.hardware.audio@6.0-util.vendor \
-    android.hardware.audio@7.0-util.vendor \
-    android.hardware.audio@7.0.vendor \
-    android.hardware.soundtrigger@2.3-impl:32 \
+    android.hardware.audio.service \
+    android.hardware.soundtrigger@2.3-impl:32
+
+PRODUCT_PACKAGES += \
     audio.bluetooth.default \
+    audio.primary.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    audio_policy.stub
+
+PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
-    libbluetooth_audio_session \
     libalsautils \
-    libnbaio_mono \
     libtinycompress \
     libdynproc \
-    libhapticgenerator \
-    libstagefright_foundation
+    libhapticgenerator
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -138,14 +135,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
-    android.hardware.drm@1.0.vendor \
-    android.hardware.drm@1.1.vendor \
-    android.hardware.drm@1.2.vendor \
-    android.hardware.drm@1.3.vendor \
-    android.hardware.drm@1.4.vendor \
-    libmockdrmcryptoplugin \
-    libdrm.vendor \
-    libdrm
+    android.hardware.drm@1.4.vendor
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -190,15 +180,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.mt6877
 
+
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.c2@1.0.vendor \
-    android.hardware.media.c2@1.1.vendor \
-    android.hardware.media.c2@1.2.vendor \
-    libavservices_minijail.vendor \
-    libstagefright_softomx_plugin.vendor \
+    libavservices_minijail_vendor \
+    libcodec2_hidl@1.2.vendor \
+    libcodec2_soft_common.vendor \
     libsfplugin_ccodec_utils.vendor \
-    libstagefright_bufferpool@2.0.1.vendor
+    libstagefright_softomx_plugin.vendor
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -224,9 +213,6 @@ PRODUCT_COPY_FILES += \
 
 # Neural Networks
 PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.0.vendor \
-    android.hardware.neuralnetworks@1.1.vendor \
-    android.hardware.neuralnetworks@1.2.vendor \
     android.hardware.neuralnetworks@1.3.vendor \
     libtextclassifier_hash.vendor
 
