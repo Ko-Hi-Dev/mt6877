@@ -1,5 +1,13 @@
 <compatibility-matrix version="4.0" type="framework">
     <hal format="hidl" optional="true">
+    <hal format="hidl" optional="true">
+        <name>android.hardware.atrace</name>
+        <version>1.0</version>
+        <interface>
+            <name>IAtraceDevice</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
         <name>android.hardware.biometrics.fingerprint</name>
         <version>2.3</version>
         <interface>
@@ -129,6 +137,38 @@
         <version>1.0</version>
         <interface>
             <name>IAtcid</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.bluetooth</name>
+        <version>1.0</version>
+        <interface>
+            <name>IBluetoothHci</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.bluetooth.a2dp</name>
+        <version>1.0</version>
+        <interface>
+            <name>IBluetoothAudioOffload</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.boot</name>
+        <version>1.0</version>
+        <interface>
+            <name>IBootControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.configstore</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>ISurfaceFlingerConfigs</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -484,6 +524,14 @@
         <version>1.2</version>
         <interface>
             <name>IAgent</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.nfc</name>
+        <version>1.2</version>
+        <interface>
+            <name>INfc</name>
             <instance>default</instance>
         </interface>
     </hal>
