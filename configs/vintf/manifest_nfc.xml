@@ -9,11 +9,10 @@
         <transport>hwbinder</transport>
         <fqname>@7.0::IEffectsFactory/default</fqname>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl">
         <name>android.system.keystore2</name>
-        <interface>
-            <name>IKeystoreService</name>
-            <instance>default</instance>
+        <transport>hwbinder</transport>
+            <fqname>IKeystoreServiceI/default</fqname>
         </interface>
     </hal>
     <hal format="hidl">
