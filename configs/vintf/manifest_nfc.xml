@@ -12,8 +12,7 @@
     <hal format="hidl">
         <name>android.system.keystore2</name>
         <transport>hwbinder</transport>
-            <fqname>IKeystoreServiceI/default</fqname>
-        </interface>
+        <fqname>@1.0::IKeystoreServiceI/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
