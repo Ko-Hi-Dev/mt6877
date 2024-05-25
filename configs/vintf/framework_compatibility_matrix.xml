@@ -158,7 +158,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.camera.isphal</name>
-        <version>1.1</version>
+        <version>1.0-1</version>
         <interface>
             <name>IISPModule</name>
             <instance>internal/0</instance>
@@ -998,6 +998,14 @@
         <version>1.0</version>
         <interface>
             <name>ITui</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.lineage.touch</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITouchscreenGesture</name>
             <instance>default</instance>
         </interface>
     </hal>
