@@ -1,4 +1,4 @@
-<compatibility-matrix version="4.0" type="framework">
+<compatibility-matrix version="5.0" type="framework">
     <hal format="hidl" optional="true">
         <name>android.hardware.atrace</name>
         <version>1.0</version>
@@ -31,13 +31,12 @@
             <instance>ozoaudio</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.secure_element</name>
-        <version>1.0-2</version>
+    <hal format="hidl" optional="true"> 
+        <name>android.hardware.secure_element</name> 
+        <version>1.0-2</version> 
         <interface>
-            <name>ISecureElement</name>
-            <regex-instance>SIM[1-9][0-9]*</regex-instance>
-            <regex-instance>eSE[1-9][0-9]*</regex-instance>
+            <name>ISecureElement</name> 
+            <instance>SIM1</instance> 
         </interface>
     </hal>
     <hal format="aidl" optional="true">
@@ -1114,3 +1113,4 @@
         </interface>
     </hal>
 </compatibility-matrix>
+
