@@ -16,6 +16,15 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>android.hardware.secure_element</name>
+        <version>1.0-2</version>
+        <interface>
+            <name>ISecureElement</name>
+            <regex-instance>SIM[1-9][0-9]*</regex-instance>
+            <regex-instance>eSE[1-9][0-9]*</regex-instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>android.hardware.radio</name>
         <version>1.2</version>
         <version>1.6</version>
@@ -225,6 +234,24 @@
         <version>1.0</version>
         <interface>
             <name>IGraphicExt</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="false">
+        <name>android.hardware.graphics.allocator</name>
+        <version>2.0</version>
+        <version>3.0</version>
+        <version>4.0</version>
+        <interface>
+            <name>IAllocator</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="false">
+        <name>android.hardware.health</name>
+        <version>2.1</version>
+        <interface>
+            <name>IHealth</name>
             <instance>default</instance>
         </interface>
     </hal>

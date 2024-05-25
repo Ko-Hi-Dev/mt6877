@@ -69,6 +69,30 @@
         </interface>
         <fqname>@4.0::IAllocator/default</fqname>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.bluetooth</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>IBluetoothHci</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.bluetooth.audio</name>
+        <version>2.0-1</version>
+        <interface>
+            <name>IBluetoothAudioProvidersFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.boot</name>
+        <version>1.2</version>
+        <interface>
+            <name>IBootControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl">
         <name>android.hardware.graphics.composer</name>
         <transport>hwbinder</transport>
