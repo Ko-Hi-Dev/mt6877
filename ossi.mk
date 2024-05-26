@@ -213,10 +213,6 @@ PRODUCT_PACKAGES += \
    libkeystore-wifi-hidl \
    libkeystore-engine-wifi-hidl
 
-# KProfiles
-PRODUCT_PACKAGES += \
-    KProfiles
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.mt6877
@@ -281,7 +277,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage    
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
