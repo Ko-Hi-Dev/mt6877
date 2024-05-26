@@ -30,14 +30,21 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@ln -sf libMcGatekeeper.so $(TARGET_OUT_VENDOR)/lib/hw/gatekeeper.trustonic.so
 	@ln -sf kmsetkey.trustonic.so $(TARGET_OUT_VENDOR)/lib/hw/kmsetkey.trustonic.so
 	@ln -sf kmsetkey.trustonic.so $(TARGET_OUT_VENDOR)/lib64/hw/kmsetkey.trustonic.so
-	@ln -sf mt6781/libdpframework.so $(TARGET_OUT_VENDOR)/lib64/libdpframework.so
-	@ln -sf mt6781/libdpframework.so $(TARGET_OUT_VENDOR)/lib/libdpframework.so
-	@ln -sf mt6781/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib/libmtk_drvb.so
-	@ln -sf mt6781/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib64/libmtk_drvb.so
-	@ln -sf mt6781/libnir_neon_driver.so $(TARGET_OUT_VENDOR)/lib64/libnir_neon_driver.so
-	@ln -sf mt6781/libnir_neon_driver.so $(TARGET_OUT_VENDOR)/lib/libnir_neon_driver.so
-	@ln -sf mt6781/libpq_prot.so $(TARGET_OUT_VENDOR)/lib64/libpq_prot.so
-	@ln -sf mt6781/libpq_prot.so $(TARGET_OUT_VENDOR)/lib/libpq_prot.so
+	@ln -sf mt6877/libdpframework.so $(TARGET_OUT_VENDOR)/lib64/libdpframework.so
+	@ln -sf mt6877/libdpframework.so $(TARGET_OUT_VENDOR)/lib/libdpframework.so
+	@ln -sf mt6877/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib/libmtk_drvb.so
+	@ln -sf mt6877/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib64/libmtk_drvb.so
+	@ln -sf mt6877/libaiselector.so $(TARGET_OUT_VENDOR)/lib/libaiselector.so
+	@ln -sf mt6877/libaiselector.so $(TARGET_OUT_VENDOR)/lib64/libaiselector.so
+	@ln -sf mt6877/libneuron_platform.vpu.so $(TARGET_OUT_VENDOR)/lib/libneuron_platform.vpu.so
+	@ln -sf mt6877/libneuron_platform.vpu.so $(TARGET_OUT_VENDOR)/lib64/libneuron_platform.vpu.so
+	@ln -sf mt6877/libneuron_runtime.5.so $(TARGET_OUT_VENDOR)/lib64/libneuron_runtime.5.so
+	@ln -sf mt6877/libneuron_runtime.so $(TARGET_OUT_VENDOR)/lib64/libneuron_runtime.so
+	@ln -sf mt6877/libmdla_ut.so $(TARGET_OUT_VENDOR)/lib64/libmdla_ut.so
+	@ln -sf mt6877/libnir_neon_driver.so $(TARGET_OUT_VENDOR)/lib64/libnir_neon_driver.so
+	@ln -sf mt6877/libnir_neon_driver.so $(TARGET_OUT_VENDOR)/lib/libnir_neon_driver.so
+	@ln -sf mt6877/libpq_prot.so $(TARGET_OUT_VENDOR)/lib64/libpq_prot.so
+	@ln -sf mt6877/libpq_prot.so $(TARGET_OUT_VENDOR)/lib/libpq_prot.so
 	@ln -sf /vendor/lib/egl/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib/hw/vulkan.$(TARGET_BOARD_PLATFORM).so
 	@ln -sf /vendor/lib64/egl/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib64/hw/vulkan.$(TARGET_BOARD_PLATFORM).so
 	$(hide) touch $@
