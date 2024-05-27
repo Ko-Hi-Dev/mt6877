@@ -59,14 +59,12 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
     android.hardware.audio@7.1-impl \
     android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio.effect@7.1-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.common-util.vendor \
     android.hardware.audio.common@5.0.vendor \
     android.hardware.audio.common@6.0.vendor \
     android.hardware.audio.common@6.0-util.vendor \
     android.hardware.audio.common@7.0.vendor \
-    android.hardware.audio.common@7.1.vendor \
     android.hardware.audio.common@7.0-util.vendor \
     android.hardware.audio@6.0.vendor \
     android.hardware.audio@6.0-util.vendor \
@@ -139,7 +137,7 @@ PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
     android.hardware.graphics.common-V2-ndk_platform.vendor \
     android.hardware.graphics.composer@2.1-service \
-    android.hardware.graphics.composer@3.0-service \
+    android.hardware.graphics.composer@4.0-service \
     android.hardware.memtrack@1.0-service \
     android.hardware.memtrack@1.0-impl \
 
