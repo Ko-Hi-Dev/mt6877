@@ -1,0 +1,4 @@
+cc_library_shared {
+    name: "librtp_jni",
+    srcs: ["librtp_jni.c"]
+}
