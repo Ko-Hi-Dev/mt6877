@@ -376,7 +376,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power@2.0.vendor
 
 PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.mtkpower@1.2.vendor
+    vendor.mediatek.hardware.mtkpower@1.2.vendor \
     vendor.mediatek.hardware.mtkpower@2.0.vendor
 
 # Perf
