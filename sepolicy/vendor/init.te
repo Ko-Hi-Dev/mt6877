@@ -29,5 +29,11 @@ allow init system_file:file { setattr };
 allow init system_file:file { execute_no_trans };
 allow init vendor_shell_exec:file { execute_no_trans };
 allow init socket_device:sock_file { create setattr };
+allow init init:netlink_generic_socket { create };
+allow init init:netlink_generic_socket { bind };
+allow init init:netlink_generic_socket { getattr };
+allow init init:netlink_generic_socket { read };
+allow init init:netlink_generic_socket { write };
+allow init init:netlink_generic_socket { setopt };
 
 get_prop(init, exported_system_prop)
