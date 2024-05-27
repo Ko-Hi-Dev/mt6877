@@ -52,16 +52,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Always use scudo for memory allocator
 PRODUCT_USE_SCUDO := true
 
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl \
-    android.hardware.boot@1.2-service
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
-    android.hardware.audio@6.0-impl \
-    android.hardware.audio@7.0-impl \
-    android.hardware.audio@7.1-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.common-util.vendor \
@@ -73,8 +66,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0.vendor \
     android.hardware.audio@6.0-util.vendor \
     android.hardware.audio@7.0-util.vendor \
-    android.hardware.audio@7.1-util.vendor \
     android.hardware.audio@7.0.vendor \
+    android.hardware.soundtrigger@2.3-impl:32 \
     audio.bluetooth.default \
     libaudiofoundation.vendor \
     libbluetooth_audio_session \
@@ -138,12 +131,14 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0.vendor \
     android.hardware.graphics.allocator@3.0.vendor \
     android.hardware.graphics.allocator@4.0.vendor \
-    android.hidl.allocator@1.0.vendor \
-    android.hardware.graphics.common-V2-ndk_platform.vendor \
-    android.hardware.graphics.composer@2.1-service \
+    android.hardware.graphics.composer@2.1-resources.vendor \
+    android.hardware.graphics.composer@2.2-resources.vendor \
     android.hardware.graphics.composer@2.3-service \
-    android.hardware.memtrack@1.0-service \
-    android.hardware.memtrack@1.0-impl \
+    android.hidl.allocator@1.0.vendor \
+    android.hardware.memtrack-service.mediatek-mali \
+    android.hardware.graphics.common-V2-ndk_platform.vendor \
+    android.hardware.graphics.common-V2-ndk.vendor \
+    disable_configstore
 
 # Display saturation adjust
 PRODUCT_VENDOR_PROPERTIES += \
@@ -202,20 +197,12 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-   android.hardware.keymaster-V3-ndk_platform.vendor \
-   android.hardware.keymaster@3.0.vendor \
-   android.hardware.keymaster@4.0.vendor \
-   android.hardware.keymaster@4.1.vendor \
-   libkeymaster4.vendor:64 \
-   libkeymaster4support.vendor:64 \
-   libkeymaster4_1support.vendor:64 \
-   libkeymaster41.vendor:64 \
-   libkeymaster_messages.vendor:64 \
-   libkeymaster_portable.vendor:64 \
-   libpuresoftkeymasterdevice.vendor:64 \
-   libsoft_attestation_cert.vendor:64 \
-   libkeystore-wifi-hidl \
-   libkeystore-engine-wifi-hidl
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.hardware_keystore.km41.xml \
+    libkeymaster4_1support.vendor \
+    libkeymaster41.vendor \
+    libpuresoftkeymasterdevice.vendor \
+    libsoft_attestation_cert.vendor
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -229,7 +216,7 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
-    libcodec2_soft_common.vendor
+    libstagefright_bufferpool@2.0.1.vendor
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -267,7 +254,6 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
     com.android.nfc_extras \
     NfcNci \
-    SecureElement \
     Tag
 
 PRODUCT_COPY_FILES += \
@@ -372,10 +358,15 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek \
-    android.hardware.power@1.3.vendor \
+    android.hardware.power@1.0.vendor \
+    android.hardware.power@1.1.vendor \
+    android.hardware.power@1.2.vendor \
+    android.hardware.power-V2-ndk_platform.vendor \
+    vendor.mediatek.hardware.mtkpower@1.0.vendor \
+    vendor.mediatek.hardware.mtkpower@1.1.vendor \
 
 PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.mtkpower@1.2.vendor 
+    vendor.mediatek.hardware.mtkpower@1.2.vendor
 
 # Perf
 PRODUCT_COPY_FILES += \
@@ -444,9 +435,11 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service-multihal.mt6877 \
+    als_correction_service.mt6877 \
     android.hardware.sensors@1.0.vendor \
+    android.hardware.sensors@2.0.vendor \
     android.hardware.sensors@2.1.vendor \
-    android.frameworks.sensorservice@1.0 \
+    android.hardware.sensors@2.0-ScopedWakelock.vendor \
     android.frameworks.sensorservice@1.0.vendor \
     libsensorndkbridge
 
@@ -480,6 +473,7 @@ PRODUCT_BOOT_JARS += \
 
 # Thermal
 PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.mtk \
     android.hardware.thermal@2.0.vendor \
     android.hardware.thermal@1.0-impl
 
@@ -513,26 +507,21 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-core/libcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrypto-v32.so \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-core/libssl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssl-v32.so
 
-# Wi-Fi
+# WiFi
 PRODUCT_PACKAGES += \
+    android.hardware.tetheroffload.config@1.0.vendor \
+    android.hardware.tetheroffload.control@1.0.vendor \
+    android.hardware.tetheroffload.control@1.1.vendor \
+    android.system.keystore2-V1-ndk.vendor \
     android.hardware.wifi@1.0.vendor \
     android.hardware.wifi@1.1.vendor \
     android.hardware.wifi@1.2.vendor \
     android.hardware.wifi@1.3.vendor \
     android.hardware.wifi@1.4.vendor \
     android.hardware.wifi@1.5.vendor \
-    android.hardware.wifi.hostapd@1.0.vendor \
-    android.hardware.wifi.hostapd@1.1.vendor \
-    android.hardware.wifi.hostapd@1.2.vendor \
-    android.hardware.wifi.hostapd@1.3.vendor \
-    android.hardware.wifi.supplicant@1.0.vendor \
-    android.hardware.wifi.supplicant@1.1.vendor \
-    android.hardware.wifi.supplicant@1.2.vendor \
-    android.hardware.wifi.supplicant@1.3.vendor \
-    android.hardware.wifi.supplicant@1.4.vendor \
-    android.hardware.tetheroffload.config@1.0.vendor \
-    android.hardware.tetheroffload.control@1.0.vendor \
-    android.hardware.tetheroffload.control@1.1.vendor
+    wpa_supplicant \
+    hostapd \
+    hostapd_cli
 
 
 PRODUCT_COPY_FILES += \
