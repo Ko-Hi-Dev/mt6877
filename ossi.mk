@@ -52,7 +52,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Always use scudo for memory allocator
 PRODUCT_USE_SCUDO := true
 
-
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-service
