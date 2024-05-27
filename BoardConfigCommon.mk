@@ -69,6 +69,10 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.2-impl \
+    android.hardware.boot@1.2-service
+
 
 # NFC
 DEVICE_MANIFEST_SKUS += nfc

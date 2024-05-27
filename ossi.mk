@@ -52,6 +52,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Always use scudo for memory allocator
 PRODUCT_USE_SCUDO := true
 
+
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.2-impl \
+    android.hardware.boot@1.2-service
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
@@ -368,12 +373,7 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek \
-    android.hardware.power@1.0.vendor \
-    android.hardware.power@1.1.vendor \
-    android.hardware.power@1.2.vendor \
-    android.hardware.power-V2-ndk_platform.vendor \
-    vendor.mediatek.hardware.mtkpower@1.0.vendor \
-    vendor.mediatek.hardware.mtkpower@1.1.vendor \
+    android.hardware.power@1.3.vendor
 
 PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
