@@ -52,6 +52,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Always use scudo for memory allocator
 PRODUCT_USE_SCUDO := true
 
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
@@ -134,6 +135,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-resources.vendor \
     android.hardware.graphics.composer@2.2-resources.vendor \
     android.hardware.graphics.composer@2.3-service \
+    android.hardware.graphics.composer3 \
     android.hidl.allocator@1.0.vendor \
     android.hardware.memtrack-service.mediatek-mali \
     android.hardware.graphics.common-V2-ndk_platform.vendor \
