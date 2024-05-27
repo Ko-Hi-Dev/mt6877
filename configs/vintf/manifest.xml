@@ -387,6 +387,7 @@
            <name>INfc</name>
            <instance>default</instance>
        </interface>
+    </hal>
     <hal format="hidl">
         <name>android.hardware.secure_element</name>
         <transport>hwbinder</transport>
