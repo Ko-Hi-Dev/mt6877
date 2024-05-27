@@ -70,14 +70,13 @@ BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 
 
-# NFC
-DEVICE_MANIFEST_SKUS += nfc
-DEVICE_MANIFEST_NFC_FILES := $(COMMON_PATH)/configs/vintf/manifest_nfc.xml
-
-# Compatibility matrix
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/framework_compatibility_matrix.xml
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
+# VINTF
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
+DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml
+ODM_MANIFEST_SKUS += nfc
+ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/vintf/manifest_nfc.xml
+ODM_MANIFEST_FILES := $(DEVICE_PATH)/configs/vintf/manifest_odm.xml
 
 # Display
 TARGET_SCREEN_DENSITY := 480
