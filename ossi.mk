@@ -458,6 +458,10 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0.vendor \
     android.hardware.secure_element@1.1.vendor \
     android.hardware.secure_element@1.2.vendor
+    
+#configstore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.0
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
