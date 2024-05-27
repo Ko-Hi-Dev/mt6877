@@ -157,6 +157,10 @@ PRODUCT_PACKAGES += \
     libmockdrmcryptoplugin \
     libdrm.vendor \
     libdrm
+    
+# Netlink Interceptor HAL
+PRODUCT_PACKAGES += \
+    android.hardware.net.nlinterceptor-service.default
 
 # Fingerprint
 PRODUCT_PACKAGES += \
