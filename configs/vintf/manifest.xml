@@ -59,6 +59,7 @@
         </interface>
         <fqname>@1.0::IGatekeeper/default</fqname>
     </hal>
+
     <hal format="hidl">
         <name>android.hardware.graphics.allocator</name>
         <transport>hwbinder</transport>
@@ -378,6 +379,16 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::INetdagent/default</fqname>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.secure_element</name>
+        <transport>hwbinder</transport>
+        <version>1.0-2</version>
+        <interface>
+            <name>ISecureElement</name>
+            <regex-instance>SIM[1-9][0-9]*</regex-instance>
+            <regex-instance>eSE[1-9][0-9]*</regex-instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.nvram</name>
