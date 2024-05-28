@@ -50,7 +50,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     BesLoudness \
-    MtkInCallService
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
