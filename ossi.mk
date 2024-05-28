@@ -379,7 +379,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.mtk.rc \
     ueventd.oplus.rc \
-    nfc_detect.sh
 
 # Fastboot
 PRODUCT_PACKAGES += \
