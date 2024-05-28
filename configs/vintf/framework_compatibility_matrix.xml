@@ -530,6 +530,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+
     <hal format="hidl" optional="true">
         <name>android.hardware.wifi</name>
         <version>1.0-4</version>
@@ -538,6 +539,18 @@
             <instance>default</instance>
         </interface>
     </hal>
+<hal format="hidl" optional="true">
+    <name>vendor.lineage.touch</name>
+    <version>1.0</version>
+    <interface>
+        <name>IHighTouchPollingRate</name>
+        <instance>default</instance>
+    </interface>
+    <interface>
+        <name>ITouchscreenGesture</name>
+        <instance>default</instance>
+    </interface>
+</hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.wifi.hostapd</name>
         <version>1.0-2</version>
