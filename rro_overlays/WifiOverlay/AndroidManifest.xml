@@ -10,9 +10,10 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<!-- Pixel specific wifi overlays -->
+
+<!-- nashc specific wifi overlays -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.wifi.resources.mt6877"
+    package="com.android.wifi.resources.nashc"
     android:versionCode="1"
     android:versionName="1.0">
     <application android:hasCode="false" />
