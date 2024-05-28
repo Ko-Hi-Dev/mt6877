@@ -1,6 +1,9 @@
 # AEE
 ro.vendor.have_aee_feature=1
 
+ro.adb.secure=0
+ro.debuggable=1
+
 # Audio
 ro.camera.sound.forced=0
 ro.audio.silent=0
