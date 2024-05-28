@@ -205,11 +205,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.ivan
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service-ivan
+    android.hardware.light-service.mt6877
 
 # Media
 PRODUCT_PACKAGES += \
@@ -403,7 +399,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1.vendor \
     android.frameworks.sensorservice@1.0 \
     android.frameworks.sensorservice@1.0.vendor \
-    android.hardware.sensors@2.0-service-multihal.ivan \
+    android.hardware.sensors@2.0-service-multihal.mt6877 \
     libsensorndkbridge
 
 PRODUCT_COPY_FILES += \
@@ -421,7 +417,8 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
+    $(DEVICE_PATH) \
+    $(COMMON_PATH) \
     hardware/mediatek \
     hardware/oplus
 
@@ -466,7 +463,7 @@ PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.control@1.1.vendor
 
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service-lazy.ivan
+    android.hardware.wifi@1.0-service-lazy.mt6877
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
