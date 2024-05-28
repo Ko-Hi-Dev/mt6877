@@ -315,10 +315,10 @@
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IOrmsAidlHalService</name>
+            <name>IOrmsHalService</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IOrmsAidlHalService/default</fqname>
+        <fqname>@1.0::IOrmslHalService/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.keymaster_attestation</name>
