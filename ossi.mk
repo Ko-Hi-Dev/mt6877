@@ -69,6 +69,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-util.vendor \
     android.hardware.audio@7.0.vendor \
     android.hardware.soundtrigger@2.3-impl:32 \
+    android.hardware.audio.common@7.0-enums.vendor \
+    android.hardware.audio.common-v2-ndk.vendor \
     audio.bluetooth.default \
     libaudiofoundation.vendor \
     libbluetooth_audio_session \
@@ -93,6 +95,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio-V3-ndk.vendor \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.audio-impl
@@ -132,6 +135,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0.vendor \
     android.hardware.graphics.allocator@3.0.vendor \
     android.hardware.graphics.allocator@4.0.vendor \
+    android.hardware.graphics.composer@2.1.vendor \
     android.hardware.graphics.composer@2.1-resources.vendor \
     android.hardware.graphics.composer@2.2-resources.vendor \
     android.hardware.graphics.composer@2.3-service \
@@ -198,12 +202,13 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
+   android.hardware.health@1.0 \
+   android.hardware.health@2.0 \
    android.hardware.health@2.1-service \
    android.hardware.health@2.1-impl
 
 # Keymaster
 PRODUCT_PACKAGES += \
-   android.hardware.keymaster-V3-ndk_platform.vendor \
    android.hardware.keymaster@3.0.vendor \
    android.hardware.keymaster@4.0.vendor \
    android.hardware.keymaster@4.1.vendor \
