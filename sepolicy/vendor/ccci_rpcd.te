@@ -1,2 +1,4 @@
 allow ccci_rpcd default_prop:file { getattr };
 allow ccci_rpcd default_prop:file { map };
+allow ccci_rpcd default_prop:file { read };
+allow ccci_rpcd default_prop:file { open };
