@@ -14,10 +14,10 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.biometrics.fingerprint@2.3-service.ivan",
+    name: "android.hardware.biometrics.fingerprint@2.3-service.oplus",
     defaults: ["hidl_defaults"],
-    init_rc: ["android.hardware.biometrics.fingerprint@2.3-service.ivan.rc"],
-    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.3-service.ivan.xml"],
+    init_rc: ["android.hardware.biometrics.fingerprint@2.3-service.oplus.rc"],
+    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.3-service.oplus.xml"],
     relative_install_path: "hw",
     srcs: [
         "BiometricsFingerprint.cpp",
