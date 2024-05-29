@@ -265,7 +265,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 DEVICE_PACKAGE_OVERLAYS += \
     $(COMMON_PATH)/overlay \
     $(COMMON_PATH)/overlay-lineage \
-    $(COMMON_PATH)/aosp-overlay
+    $(COMMON_PATH)/overlay-aosp
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(COMMON_PATH)/overlay-lineage
