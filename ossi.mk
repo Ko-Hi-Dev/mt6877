@@ -267,6 +267,9 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(COMMON_PATH)/overlay-lineage \
     $(COMMON_PATH)/overlay-aosp
 
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(COMMON_PATH)/overlay-lineage
+
 PRODUCT_PACKAGES += \
     WifiOverlay \
     TetheringConfigOverlay \
