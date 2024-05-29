@@ -22,8 +22,6 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
-    android.hardware.audio@6.0-impl \
-    android.hardware.audio@7.0-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.common-util.vendor \
@@ -36,6 +34,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-util.vendor \
     android.hardware.audio@7.0-util.vendor \
     android.hardware.audio@7.0.vendor \
+    android.hardware.soundtrigger@2.3-impl:32 \
     audio.bluetooth.default \
     libaudiofoundation.vendor \
     libbluetooth_audio_session \
@@ -44,12 +43,9 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libdynproc \
     libhapticgenerator \
-    audio.r_submix.default \
-    audio.usb.default \
-    audio_policy.stub
+    libstagefright_foundation
 
 PRODUCT_PACKAGES += \
-    BesLoudness \
     MtkInCallService
 
 PRODUCT_COPY_FILES += \
@@ -454,7 +450,10 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi.supplicant@1.4.vendor \
     android.hardware.tetheroffload.config@1.0.vendor \
     android.hardware.tetheroffload.control@1.0.vendor \
-    android.hardware.tetheroffload.control@1.1.vendor
+    android.hardware.tetheroffload.control@1.1.vendor \
+    wpa_supplicant \
+    hostapd \
+    hostapd_cli
 
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy.mt6877
