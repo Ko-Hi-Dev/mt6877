@@ -1,0 +1,9 @@
+allow crash_dump bluetooth_data_file:file { read };
+allow crash_dump bluetooth_data_file:file { open };
+allow crash_dump bluetooth_data_file:file { getattr };
+allow crash_dump bluetooth_data_file:file { map };
+allow crash_dump resourcecache_data_file:file { read };
+allow crash_dump resourcecache_data_file:file { open };
+allow crash_dump resourcecache_data_file:file { getattr };
+allow crash_dump resourcecache_data_file:file { map };
+allow crash_dump vendor_overlay_file:file { read };
