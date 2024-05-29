@@ -27,6 +27,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.common-util.vendor \
     android.hardware.audio.common@5.0.vendor \
     android.hardware.audio.common@6.0.vendor \
+    android.hardware.audio.common@7.0-enums \
     android.hardware.audio.common@6.0-util.vendor \
     android.hardware.audio.common@7.0.vendor \
     android.hardware.audio.common@7.0-util.vendor \
@@ -75,7 +76,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.audio-impl
 
-# Camera
+
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0.vendor \
     android.hardware.camera.device@3.2.vendor \
@@ -87,7 +88,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4.vendor \
     android.hardware.camera.provider@2.5.vendor \
     android.hardware.camera.provider@2.6.vendor \
-    libcamera2ndk_vendor
 
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim
