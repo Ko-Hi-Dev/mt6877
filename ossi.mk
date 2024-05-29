@@ -31,10 +31,9 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.common@6.0.vendor \
     android.hardware.audio.common@6.0-util.vendor \
     android.hardware.audio.common@7.0.vendor \
-    android.hardware.audio.common@7.0-enums.so \
     android.hardware.audio.common@7.0-util.vendor \
-    android.hardware.audio@6.0.vendor \
     android.hardware.soundtrigger@2.3-impl:32 \
+    android.hardware.audio@6.0.vendor \
     android.hardware.audio@6.0-util.vendor \
     android.hardware.audio@7.0-util.vendor \
     android.hardware.audio@7.0.vendor \
