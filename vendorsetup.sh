@@ -26,5 +26,5 @@ git clone --depth=1 https://github.com/oneplus-mediatek-dev/android_prebuilts_cl
 
 
 # Source patches
-bash device/oplus/mt6877-common/patches/apply.sh
+# bash device/oplus/mt6877-common/patches/apply.sh
 
