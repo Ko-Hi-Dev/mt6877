@@ -1,4 +1,5 @@
 # AAL
+ro.vendor.pq.mtk_aal_support=1
 ro.vendor.mtk_aal_support=1
 
 # AEE
@@ -53,6 +54,7 @@ persist.vendor.connsys.fm_chipid=mt6635
 camera.disable_zsl_mode=1
 vendor.camera.mdp.dre.enable=1
 vendor.camera.mdp.cz.enable=1
+vendor.camera.mdp.hfg.enable=1
 vendor.mtk.camera.app.fd.video=1
 ro.vendor.camera.aishutter.support=1
 ro.vendor.camera3.zsl.default=260
@@ -269,7 +271,7 @@ ro.vendor.ap_info_monitor=0
 ro.vendor.wlan.standalone.log=y
 ro.vendor.wlan.gen=gen4m
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
-ro.vendor.connsys.dedicated.log.port=bt,wifi,gps,mcu
+ro.vendor.connsys.dedicated.log.port=bt,wifi,ics,btmcu,wifimcu
 persist.vendor.connsys.coredump.mode=2
 persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.patch.version=-1

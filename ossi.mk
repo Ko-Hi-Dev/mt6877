@@ -169,6 +169,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     mediatek-common \
     mediatek-framework \
+    mediatek-services \
     mediatek-ims-base \
     mediatek-ims-common \
     mediatek-telecom-common \
