@@ -169,11 +169,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     mediatek-common \
     mediatek-framework \
-    mediatek-services \
+    mediatek-gwsd \
+    mediatek-gwsdv2 \
     mediatek-ims-base \
     mediatek-ims-common \
+    mediatek-ims-legacy.jar \
+    mediatek-ims-extension-plugin.jar \
+    mediatek-services \
     mediatek-telecom-common \
     mediatek-telephony-base \
+    mediatek-wfo-legacy.jar \
     mediatek-telephony-common \
     oplus-framework \
     oplus-framework-telephony
