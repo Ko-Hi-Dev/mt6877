@@ -166,6 +166,7 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor
 
 # IMS
+PRODUCT_BOOT_JARS += \
     mediatek-common \
     mediatek-framework \
     mediatek-gwsd \
