@@ -32,7 +32,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.common@6.0-util.vendor \
     android.hardware.audio.common@7.0.vendor \
     android.hardware.audio.common@7.0-util.vendor \
-    android.hardware.soundtrigger@2.3-impl:32 \
     android.hardware.audio@6.0.vendor \
     android.hardware.audio@6.0-util.vendor \
     android.hardware.audio@7.0-util.vendor \
@@ -104,27 +103,30 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4-service.clearkey
-
-PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey \
     android.hardware.drm@1.0.vendor \
     android.hardware.drm@1.1.vendor \
     android.hardware.drm@1.2.vendor \
     android.hardware.drm@1.3.vendor \
-    android.hardware.drm@1.4.vendor 
+    android.hardware.drm@1.4.vendor \
+    libdrmclearkeyplugin.vendor \
+    libmockdrmcryptoplugin.vendor \
+    libclearkeycasplugin.vendor \
+    libdrm.vendor \
+    libdrm
 
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0.vendor \
     android.hardware.graphics.allocator@3.0.vendor \
     android.hardware.graphics.allocator@4.0.vendor \
+    android.hardware.graphics.composer@2.2-service \
     android.hidl.allocator@1.0.vendor \
-    android.hardware.graphics.common-V2-ndk_platform.vendor \
-    android.hardware.graphics.composer@2.1-service \
     android.hardware.memtrack@1.0-service \
     android.hardware.memtrack@1.0-impl \
-    libdrm.vendor \
-    libdrm
+    android.hardware.graphics.common-V2-ndk_platform.vendor \
+    android.hardware.graphics.common-V2-ndk.vendor \
+    disable_configstore
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -205,13 +207,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.mt6877
 
+
 # Media
 PRODUCT_PACKAGES += \
     libcodec2_hidl@1.1.vendor \
     libcodec2_hidl@1.2.vendor \
-    libavservices_minijail_vendor \
+    libavservices_minijail.vendor \
     libstagefright_softomx_plugin.vendor \
-    libsfplugin_ccodec_utils.vendor \
     libcodec2_soft_common.vendor
 
 PRODUCT_COPY_FILES += \
@@ -267,7 +269,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage \
-    $(LOCAL_PATH)/overlay-aosp
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
@@ -460,7 +461,7 @@ PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.control@1.1.vendor \
     wpa_supplicant \
     hostapd \
-    hostapd_cli 
+    hostapd_cli
 
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy.mt6877
