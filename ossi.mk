@@ -19,7 +19,6 @@ $(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
@@ -33,6 +32,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.common@6.0-util.vendor \
     android.hardware.audio.common@7.0.vendor \
     android.hardware.audio.common@7.0-util.vendor \
+    android.hardware.soundtrigger@2.3-impl:32 \
     android.hardware.audio@6.0.vendor \
     android.hardware.audio@6.0-util.vendor \
     android.hardware.audio@7.0-util.vendor \
@@ -83,7 +83,6 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Aperture \
     android.hardware.camera.common@1.0.vendor \
     android.hardware.camera.device@3.2.vendor \
     android.hardware.camera.device@1.0.vendor \
@@ -105,27 +104,27 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey \
+    android.hardware.drm@1.4-service.clearkey
+
+PRODUCT_PACKAGES += \
     android.hardware.drm@1.0.vendor \
     android.hardware.drm@1.1.vendor \
     android.hardware.drm@1.2.vendor \
     android.hardware.drm@1.3.vendor \
-    android.hardware.drm@1.4.vendor \
-    libdrm.vendor \
-    libdrm
+    android.hardware.drm@1.4.vendor 
 
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0.vendor \
     android.hardware.graphics.allocator@3.0.vendor \
     android.hardware.graphics.allocator@4.0.vendor \
-    android.hardware.graphics.composer@2.2-service \
     android.hidl.allocator@1.0.vendor \
+    android.hardware.graphics.common-V2-ndk_platform.vendor \
+    android.hardware.graphics.composer@2.1-service \
     android.hardware.memtrack@1.0-service \
     android.hardware.memtrack@1.0-impl \
-    android.hardware.graphics.common-V2-ndk_platform.vendor \
-    android.hardware.graphics.common-V2-ndk.vendor \
-    disable_configstore
+    libdrm.vendor \
+    libdrm
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -206,13 +205,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.mt6877
 
-
 # Media
 PRODUCT_PACKAGES += \
     libcodec2_hidl@1.1.vendor \
     libcodec2_hidl@1.2.vendor \
-    libavservices_minijail.vendor \
+    libavservices_minijail_vendor \
     libstagefright_softomx_plugin.vendor \
+    libsfplugin_ccodec_utils.vendor \
     libcodec2_soft_common.vendor
 
 PRODUCT_COPY_FILES += \
