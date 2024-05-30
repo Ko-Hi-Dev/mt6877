@@ -227,6 +227,10 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 # Sensors
 ro.vendor.mtk.sensor.support=yes
 
+# SoC
+ro.soc.manufacturer=MediaTek
+ro.soc.model=MT6877
+
 # LMK
 ro.lmk.psi_complete_stall_ms=150
 ro.lmk.swap_free_low_percentage=20
