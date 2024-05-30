@@ -173,12 +173,12 @@ PRODUCT_BOOT_JARS += \
     mediatek-gwsdv2 \
     mediatek-ims-base \
     mediatek-ims-common \
-    mediatek-ims-legacy.jar \
-    mediatek-ims-extension-plugin.jar \
+    mediatek-ims-legacy \
+    mediatek-ims-extension-plugin \
     mediatek-services \
     mediatek-telecom-common \
     mediatek-telephony-base \
-    mediatek-wfo-legacy.jar \
+    mediatek-wfo-legacy \
     mediatek-telephony-common \
     oplus-framework \
     oplus-framework-telephony
