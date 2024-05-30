@@ -8,9 +8,11 @@ rm -rf $KSU && git clone https://github.com/tiann/KernelSU $KSU
 
 git clone https://github.com/Ko-Hi-Dev/ivan.git device/oplus/ivan
 
-git clone https://gitlab.com/Ko_Hi/mt6877_vendor.git vendor/oplus/mt6877-common
+#git clone https://gitlab.com/Ko_Hi/mt6877_vendor.git vendor/oplus/mt6877-common
 
-git clone https://gitlab.com/Ko_Hi/mt6877.git vendor/oplus/ivan
+#git clone https://gitlab.com/Ko_Hi/mt6877.git vendor/oplus/ivan
+
+
 
 git clone -b lineage-20 https://github.com/LineageOS/android_hardware_oplus.git hardware/oplus
 
