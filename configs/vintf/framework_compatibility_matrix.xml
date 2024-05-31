@@ -197,6 +197,13 @@
         <instance>default</instance>
     </interface>
 </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.camera.provider</name>
+        <interface>
+            <name>ICameraProvider</name>
+            <instance>internal/0</instance>
+        </interface>
+    </hal>
 <hal format="hidl" optional="true">
     <name>vendor.mediatek.hardware.camera.atms</name>
     <version>1.0</version>
