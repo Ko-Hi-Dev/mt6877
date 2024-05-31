@@ -191,13 +191,7 @@
 </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.camera.provider</name>
-        <interface>
-            <name>ICameraProvider</name>
-            <instance>internal/0</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.camera.provider</name>
+        <version>2.4-7</version>
         <interface>
             <name>ICameraProvider</name>
             <instance>internal/0</instance>
