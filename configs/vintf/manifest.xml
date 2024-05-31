@@ -97,7 +97,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-</manifest>
     <hal format="hidl">
         <name>android.hardware.graphics.allocator</name>
         <transport>hwbinder</transport>
