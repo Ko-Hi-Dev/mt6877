@@ -191,7 +191,10 @@
 </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.camera.provider</name>
-        <version>2.4-7</version>
+        <version>2.4</version>
+        <version>2.5</version>
+        <version>2.6</version>
+        <version>2.7</version>
         <interface>
             <name>ICameraProvider</name>
             <instance>internal/0</instance>
