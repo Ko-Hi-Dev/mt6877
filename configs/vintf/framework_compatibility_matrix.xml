@@ -189,11 +189,12 @@
         <instance>default</instance>
     </interface>
 </hal>
-    <hal format="aidl" optional="true">
+    <hal format="hidl" optional="true">
         <name>android.hardware.camera.provider</name>
+        <version>2.4-6</version>
         <interface>
             <name>ICameraProvider</name>
-            <instance>internal/0</instance>
+            <regex-instance>[^/]+/[0-9]+</regex-instance>
         </interface>
     </hal>
 <hal format="hidl" optional="true">
