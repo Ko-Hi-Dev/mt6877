@@ -47,7 +47,6 @@ PRODUCT_PACKAGES += \
     libhapticgenerator \
     audio.r_submix.default \
     audio.usb.default \
-    audio_policy.stub
 
 PRODUCT_PACKAGES += \
     MtkInCallService
@@ -464,7 +463,6 @@ PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor \
     android.hardware.tetheroffload.control@1.0.vendor \
     android.hardware.tetheroffload.control@1.1.vendor \
-    wpa_supplicant \
     hostapd \
     hostapd_cli 
 
