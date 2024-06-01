@@ -29,8 +29,8 @@
        with a power meter. -->
   <item name="none">0</item>
   <item name="ambient on">35</item>
-  <item name="screen.on.display0">90</item>  <!-- ~200mA -->
-  <item name="screen.full.display0">250</item>  <!-- ~300mA -->
+  <item name="screen.on.display0">60</item>  <!-- ~200mA -->
+  <item name="screen.full.display0">167</item>  <!-- ~300mA -->
   <item name="bluetooth.active">80</item> <!-- Bluetooth data transfer, ~10mA -->
   <item name="bluetooth.on">1.5</item>  <!-- Bluetooth on & connectable, but not connected, ~0.1mA -->
   <item name="wifi.on">2.8</item>  <!-- ~3mA -->
@@ -225,7 +225,7 @@
   </array>
 
   <!-- This is the battery capacity in mAh (measured at nominal voltage) -->
-  <item name="battery.capacity">5000</item>
+  <item name="battery.capacity">4500</item>
 
   <!-- Wifi related values. -->
   <!-- Idle Receive current for wifi radio in mA. 0 by default-->
