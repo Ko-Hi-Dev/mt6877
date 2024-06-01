@@ -82,6 +82,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    Aperture \
     android.hardware.camera.common@1.0.vendor \
     android.hardware.camera.device@3.2.vendor \
     android.hardware.camera.device@1.0.vendor \
@@ -96,10 +97,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim
-
-# DT2W
-PRODUCT_PACKAGES += \
-    DT2W-Service-mt6877
 
 # Doze
 PRODUCT_PACKAGES += \
