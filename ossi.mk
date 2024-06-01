@@ -98,6 +98,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim
 
+# DT2W
+PRODUCT_PACKAGES += \
+    DT2W-Service-mt6877
+
 # Doze
 PRODUCT_PACKAGES += \
     OplusDoze
@@ -423,7 +427,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     $(COMMON_PATH) \
     hardware/mediatek \
-    hardware/oplus
 
 # Thermal
 PRODUCT_PACKAGES += \
