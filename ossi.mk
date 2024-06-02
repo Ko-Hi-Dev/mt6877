@@ -388,6 +388,13 @@ PRODUCT_PACKAGES += \
 # Fastboot
 PRODUCT_PACKAGES += \
     init.recovery.mt6877.rc
+    
+# RealmeParts
+$(call inherit-product, packages/apps/RealmeParts/parts.mk)
+
+
+PRODUCT_COPY_FILES += \
+    packages/apps/RealmeParts/init/cabc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cabc.rc
 
 # Secure Element
 PRODUCT_PACKAGES += \
