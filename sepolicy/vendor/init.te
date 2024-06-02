@@ -39,8 +39,6 @@ allow init runas_exec:file { getattr };
 allow init sdcardd_exec:file { getattr };
 allow init sgdisk_exec:file { getattr };
 allow init simpleperf_app_runner_exec:file { getattr };
-allow init tcpdump_exec:file { getattr };
-allow init viewcompiler_exec:file { getattr };
 allow init vold_prepare_subdirs_exec:file { getattr };
 allow init wmtWifi_device:chr_file { write };
 allow init wmtWifi_device:chr_file { open };
