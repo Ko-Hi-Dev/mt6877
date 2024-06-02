@@ -34,8 +34,6 @@ allow init vendor_file:file { execute_no_trans };
 allow init hwservicemanager:binder { call };
 allow init hwservicemanager:binder { transfer };
 allow init system_server:binder { call };
-allow init rs_exec:file { getattr };
-allow init blkid_exec:file { getattr };
 allow init dnsmasq_exec:file { getattr };
 allow init incident_exec:file { getattr };
 allow init incident_helper_exec:file { getattr };
