@@ -327,10 +327,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
     $(LOCAL_PATH)/configs/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml
     
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/wifi/android.hardware.wifi.supplicant.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi.supplicant.xml \
-    $(LOCAL_PATH)/wifi/android.hardware.wifi.hostapd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek \

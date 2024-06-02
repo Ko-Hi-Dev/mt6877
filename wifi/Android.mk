@@ -45,7 +45,9 @@ LOCAL_HEADER_LIBRARIES := libhardware_legacy_headers
 
 LOCAL_REQUIRED_MODULES := \
     android.hardware.wifi@1.0-service-lazy.mt6877.rc \
-    android.hardware.wifi@1.0-service.mt6877.xml
+    android.hardware.wifi@1.0-service.mt6877.xml \
+    android.hardware.wifi.hostapd.xml \
+    android.hardware.wifi.supplicant.xml
 
 LOCAL_SRC_FILES := \
     service.cpp
