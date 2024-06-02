@@ -16,6 +16,17 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/vintf/manifest
 LOCAL_SRC_FILES := $(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
 
+LOCAL_PATH := hardware/interfaces/wifi/1.6/default
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := android.hardware.wifi.supplicant.mt6877
+LOCAL_MODULE_RELATIVE_PATH := hw
+LOCAL_PROPRIETARY_MODULE := true
+LOCAL_CPPFLAGS := -Wall -Werror -Wextra
+LOCAL_CFLAGS := -DLAZY_SERVICE
+LOCAL_C_INCLUDES := frameworks/opt/net/wifi/libwifi_hal/include
+LOCAL_HEADER_LIBRARIES := libhardware_legacy_headers
+
 LOCAL_REQUIRED_MODULES := \
     android.hardware.wifi.supplicant.mt6877.rc \
     android.hardware.wifi.supplicant.mt6877.xml
