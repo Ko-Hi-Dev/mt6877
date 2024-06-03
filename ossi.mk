@@ -167,7 +167,6 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_BOOT_JARS += \
-    ImsService \
     mediatek-common \
     mediatek-framework \
     mediatek-gwsd \
