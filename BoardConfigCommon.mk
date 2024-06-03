@@ -126,7 +126,7 @@ BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 104857600
 BOARD_ODMIMAGE_PARTITION_RESERVED_SIZE := 104857600
 
 # Reserve space for gapps install
-include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/lineage/config/BoardConfigReservedSize.mk
 
 # File System Type
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
