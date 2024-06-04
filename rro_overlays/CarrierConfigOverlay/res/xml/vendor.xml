@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <carrier_config_list>
     <carrier_config>
-        <boolean name="carrier_volte_available_bool" value="false" />
-        <boolean name="carrier_vt_available_bool" value="false" />
-        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_lte_preferred_for_second_slot" value="true" />
     </carrier_config>
     <carrier_config operator="Globe">

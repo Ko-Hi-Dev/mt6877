@@ -169,19 +169,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     mediatek-common \
     mediatek-framework \
-    mediatek-gwsd \
-    mediatek-gwsdv2 \
     mediatek-ims-base \
     mediatek-ims-common \
-    mediatek-ims-extension-plugin \
-    mediatek-ims-legacy \
-    mediatek-services \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
-    mediatek-wfo-legacy \
-    oplus-framework-telephony \
     oplus-framework \
+    oplus-framework-telephony
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
