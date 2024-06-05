@@ -1,4 +1,3 @@
-allow vtservice radio_service:service_manager find;
 type vtservice, coredomain;
 type vtservice_exec, exec_type, file_type, system_file_type;
 init_daemon_domain(vtservice);
