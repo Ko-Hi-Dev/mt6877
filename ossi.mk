@@ -169,6 +169,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     mtk-ims \
     mtk-ims-telephony
+    
+# ImsInit hack
+PRODUCT_PACKAGES += \
+    ImsInit
 
 # IMS
 PRODUCT_BOOT_JARS += \
