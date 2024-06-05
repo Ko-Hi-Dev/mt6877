@@ -164,15 +164,6 @@ PRODUCT_PACKAGES += \
     libhardware.vendor \
     libhwbinder \
     libhwbinder.vendor
-    
- # MTK IMS Overlays
-PRODUCT_PACKAGES += \
-    mtk-ims \
-    mtk-ims-telephony
-    
-# ImsInit hack
-PRODUCT_PACKAGES += \
-    ImsInit
 
 # IMS
 PRODUCT_BOOT_JARS += \
