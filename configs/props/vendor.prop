@@ -157,6 +157,7 @@ telephony.active_modems.max_count=2
 ro.telephony.default_network=33,33,33,33
 persist.vendor.log.tel_log_ctrl=1
 persist.vendor.mims_support=2
+ro.vendor.md_mims_support=2
 persist.vendor.factory.GB2312=yes
 persist.vendor.radio.fd.counter=150
 persist.vendor.radio.fd.off.counter=50
