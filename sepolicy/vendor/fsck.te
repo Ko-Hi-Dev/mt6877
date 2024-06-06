@@ -1,1 +1,5 @@
 allow fsck oplus_block_device:blk_file rw_file_perms;
+allow fsck_untrusted sysfs_devices_block:dir { search };
+allow fsck_untrusted sysfs_devices_block:file { read };
+allow fsck_untrusted sysfs_devices_block:file { open };
+allow fsck_untrusted sysfs_devices_block:file { getattr };
