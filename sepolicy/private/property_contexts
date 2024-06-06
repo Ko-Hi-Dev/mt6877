@@ -28,6 +28,9 @@ vendor.oplus.                                    u:object_r:exported_system_prop
 vendor.oppo.                                     u:object_r:exported_system_prop:s0
 vendor.property.debug.caliexif.enable            u:object_r:exported_system_prop:s0
 
+#Telephony
+ro.telephony.default_network 			   u:object_r:radio_prop:s0
+
 # Fingerprint
 oplus.fingerprint.                               u:object_r:system_fingerprint_prop:s0
 gf.debug.                                        u:object_r:system_fingerprint_prop:s0
