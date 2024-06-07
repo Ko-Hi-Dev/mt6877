@@ -97,6 +97,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim
+    
+#fschg
+PRODUCT_PACKAGES += \
+vendor.lineage.fastcharge@1.0
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -330,6 +334,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
     $(LOCAL_PATH)/configs/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml
+    
+
+# Power
+$(call inherit-product, $(LOCAL_PATH)/power-libperfmgr/power-libperfmgr.mk)
     
 # Power
 PRODUCT_PACKAGES += \
