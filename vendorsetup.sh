@@ -18,7 +18,7 @@ git clone -b lineage-20 https://github.com/LineageOS/android_hardware_oplus.git 
 
 git clone -b lineage-20 https://github.com/oplus-ossi-development/android_hardware_mediatek.git hardware/mediatek
 
-git lone -b lineage-20 https://github.com/HyperTeam/android_packages_apps_RealmeParts.git packages/apps/RealmeParts
+git clone -b lineage-20 https://github.com/HyperTeam/android_packages_apps_RealmeParts.git packages/apps/RealmeParts
 
 git clone -b lineage-20 https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git device/mediatek/sepolicy_vndr
 
