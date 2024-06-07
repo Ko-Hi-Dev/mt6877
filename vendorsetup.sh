@@ -12,13 +12,13 @@ git clone https://github.com/Ko-Hi-Dev/ivan.git device/oplus/ivan
 
 #git clone https://gitlab.com/Ko_Hi/mt6877.git vendor/oplus/ivan
 
-
+git clone https://gitlab.com/Ko_Hi/vendor_ivan.git vendor/oplus/ivan
 
 git clone -b lineage-20 https://github.com/LineageOS/android_hardware_oplus.git hardware/oplus
 
 git clone -b lineage-20 https://github.com/oplus-ossi-development/android_hardware_mediatek.git hardware/mediatek
 
-git clone https://github.com/oplus-ossi-development/android_packages_apps_OneplusParts.git packages/apps/OneplusParts
+git lone -b lineage-20 https://github.com/HyperTeam/android_packages_apps_RealmeParts.git packages/apps/RealmeParts
 
 git clone -b lineage-20 https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git device/mediatek/sepolicy_vndr
 
