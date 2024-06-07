@@ -13,9 +13,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Dalvik VM Configuration
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
-# Parts
-$(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
-
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -400,10 +397,6 @@ PRODUCT_PACKAGES += \
 # Fastboot
 PRODUCT_PACKAGES += \
     init.recovery.mt6877.rc
-    
-# RealmeParts
-$(call inherit-product, packages/apps/RealmeParts/parts.mk)
-
 
 PRODUCT_COPY_FILES += \
     packages/apps/RealmeParts/init/cabc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cabc.rc
