@@ -443,7 +443,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH) \
     hardware/mediatek \
     hardware/oplus \
-    hardware/google/pixel
 
 # Thermal
 PRODUCT_PACKAGES += \
