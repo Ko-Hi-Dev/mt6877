@@ -19,6 +19,17 @@ $(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Device-specific background service
+PRODUCT_PACKAGES += \
+    OssiDeviceService
+
+# Always use GPU for screen compositing
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.disable_hwc_overlays=1
+
+# Always use scudo for memory allocator
+PRODUCT_USE_SCUDO := true
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
@@ -97,10 +108,16 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim
-    
-#fschg
-PRODUCT_PACKAGES += \
-vendor.lineage.fastcharge@1.0
+
+# Dex/ART optimization
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+USE_DEX2OAT_DEBUG := false
+DONT_DEXPREOPT_PREBUILTS := true
+# Enable whole-program R8 Java optimizations for SystemUI and system_server
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -224,6 +241,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_mediatek_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_video.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_mediatek_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_audio.xml \
+    $(LOCAL_PATH)/configs/media/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml
     $(LOCAL_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml
 
 PRODUCT_COPY_FILES += \
