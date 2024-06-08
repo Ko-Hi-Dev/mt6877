@@ -150,6 +150,21 @@ ro.vendor.mtk_gps_support=1
 ro.vendor.gps.chrdev=gps_drv
 ro.vendor.mtk_log_hide_gps=0
 
+# IMS
+ro.vendor.md_auto_setup_ims=1
+persist.vendor.ims_support=1
+persist.vendor.mtk_dynamic_ims_switch=1
+persist.vendor.mtk_wfc_support=1
+persist.vendor.volte_support=1
+persist.vendor.mtk.volte.enable=1
+persist.vendor.vilte_support=1
+persist.vendor.viwifi_support=1
+persist.vendor.mtk_ct_volte_support=3
+
+# Init
+ro.vendor.rc=/vendor/etc/init/hw/
+ro.vendor.init.sensor.rc=init.sensor_2_0.rc
+
 # Radio
 vendor.connsys.driver.ready=no
 telephony.lteOnCdmaDevice=1
@@ -159,6 +174,18 @@ persist.vendor.log.tel_log_ctrl=1
 persist.vendor.mims_support=2
 ro.vendor.md_mims_support=2
 persist.vendor.factory.GB2312=yes
+
+# Neural Networks
+ro.vendor.mtk_nn_support=1
+ro.vendor.mtk_nn.option=A,B,E,F,Z
+ro.vendor.mtk_nn_quant_preferred=1
+ro.vendor.mtk_nn_baseline_support=1
+debug.mtk_tflite.target_nnapi=29
+
+# Priv-app Permissions
+ro.control_privapp_permissions=enforce
+
+# Radio
 persist.vendor.radio.fd.counter=150
 persist.vendor.radio.fd.off.counter=50
 persist.vendor.radio.fd.r8.counter=150
@@ -207,17 +234,6 @@ ro.vendor.mtk_c2k_support=1
 ro.vendor.mtk_ps1_rat=N/C/Lf/Lt/W/G
 ro.vendor.mtk_lte_support=1
 ro.vendor.mtk_c2k_support=1
-
-# IMS
-ro.vendor.md_auto_setup_ims=1
-persist.vendor.ims_support=1
-persist.vendor.mtk_dynamic_ims_switch=1
-persist.vendor.mtk_wfc_support=1
-persist.vendor.volte_support=1
-persist.vendor.mtk.volte.enable=1
-persist.vendor.vilte_support=1
-persist.vendor.viwifi_support=1
-persist.vendor.mtk_ct_volte_support=3
 
 # Storage
 ro.vendor.mtk_f2fs_enable=1
