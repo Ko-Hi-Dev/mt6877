@@ -295,17 +295,6 @@ ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=1440
 ro.zram.periodic_wb_delay_hours=2
 
-# Logging
-persist.log.tag.libPowerHal=I
-persist.log.tag.mtkpower@impl=I
-persist.log.tag.mtkpower_client=I
-persist.log.tag.UxUtility=I
-persist.log.tag.PowerHalAddressUitls=I
-persist.log.tag.PowerHalMgrImpl=I
-persist.log.tag.PowerHalMgrServiceImpl=I
-persist.log.tag.PowerHalWifiMonitor=I
-persist.log.tag.RILMUXD=I
-persist.log.tag.UxUtility=I
 
 # default refresh rate threshold
 debug.sf.frame_rate_multiple_threshold=0
