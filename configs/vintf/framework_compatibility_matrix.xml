@@ -495,9 +495,4 @@
         <instance>default</instance>
     </interface>
 </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.power</name>
-        <version>2</version>
-        <fqname>IPower/default</fqname>
-    </hal>
 </compatibility-matrix>
