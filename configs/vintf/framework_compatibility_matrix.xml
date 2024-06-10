@@ -495,7 +495,7 @@
         <instance>default</instance>
     </interface>
 </hal>
-    <hal format="aidl" optional="true">   
+    <hal format="hidl" optional="true">   
         <version>1.2</version>
         <name>android.hardware.power</name>
         <interface>
