@@ -495,4 +495,9 @@
         <instance>default</instance>
     </interface>
 </hal>
+    <hal format="aidl" optional="true">     
+        <interface>
+            <name>IPower</name>
+            <instance>default</instance>
+        </interface>
 </compatibility-matrix>
