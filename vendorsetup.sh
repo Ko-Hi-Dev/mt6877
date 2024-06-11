@@ -16,7 +16,7 @@ git clone https://gitlab.com/Ko_Hi/vendor_ivan.git vendor/oplus/ivan
 
 git clone -b lineage-20 https://github.com/LineageOS/android_hardware_oplus.git hardware/oplus
 
-git clone -b lineage-20 https://github.com/oplus-ossi-development/android_hardware_mediatek.git hardware/mediatek
+git clone -b lineage-20 https://github.com/LineageOS/android_hardware_mediatek.git hardware/mediatek
 
 git clone -b lineage-20 https://github.com/HyperTeam/android_packages_apps_RealmeParts.git packages/apps/RealmeParts
 
