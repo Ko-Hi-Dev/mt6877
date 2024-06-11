@@ -1,32 +1,8 @@
 <!--
     Input:
-        manifest_apuware_utils.xml
-        manifest_sensor_hidl_v2.xml
-        manifest_audio.xml
-        manifest_dsds.xml
-        manifest_radioconfig.xml
-        manifest_em.xml
-        manifest_bgservice.xml
-        manifest_videotelephony.xml
-        manifest_km41.xml
-        manifest_tee.xml
-        manifest_trustonic.xml
-        manifest_log.xml
-        manifest_mdmonitor.xml
-        manifest_aee.xml
-        manifest_netdagent.xml
-        manifest_tetheroffloadservice.xml
-        manifest_pq.xml
-        manifest_mmservice.xml
-        manifest_mmagent.xml
-        manifest_dmc.xml
-        manifest_apmonitor.xml
-        manifest_nwk_opt.xml
-        manifest_composer.xml
-        manifest_target_level_r.xml
         manifest.xml
 -->
-<manifest version="4.0" type="device" target-level="5">
+<manifest version="5.0" type="device" target-level="5">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -57,7 +33,7 @@
         </interface>
         <fqname>@1.1::IBluetoothHci/default</fqname>
     </hal>
-        <hal format="hidl">
+    <hal format="hidl">
         <name>android.hardware.bluetooth.audio</name>
         <transport>hwbinder</transport>
         <version>2.1</version>
@@ -66,6 +42,16 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.1::IBluetoothAudioProvidersFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.camera.provider</name>
+        <transport>hwbinder</transport>
+        <version>2.6</version>
+        <interface>
+            <name>ICameraProvider</name>
+            <instance>internal/0</instance>
+        </interface>
+        <fqname>@2.6::ICameraProvider/internal/0</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.gatekeeper</name>
@@ -143,16 +129,18 @@
         <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.nfc</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>INfc</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.2::INfc/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
-        <fqname>@1.2::IRadio/em1</fqname>
-        <fqname>@1.2::IRadio/em2</fqname>
-        <fqname>@1.2::IRadio/imsAospSlot1</fqname>
-        <fqname>@1.2::IRadio/imsAospSlot2</fqname>
-        <fqname>@1.2::IRadio/se1</fqname>
-        <fqname>@1.2::IRadio/se2</fqname>
-        <fqname>@1.2::IRadio/slot1</fqname>
-        <fqname>@1.2::IRadio/slot2</fqname>
         <fqname>@1.2::ISap/slot1</fqname>
         <fqname>@1.2::ISap/slot2</fqname>
         <fqname>@1.6::IRadio/em1</fqname>
@@ -180,6 +168,12 @@
         <fqname>@1.0::IDevice/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.secure_element</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::ISecureElement/SIM1</fqname>
+        <fqname>@1.2::ISecureElement/SIM2</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.soundtrigger</name>
         <transport>hwbinder</transport>
         <version>2.3</version>
@@ -188,12 +182,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.3::ISoundTriggerHw/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.secure_element</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.2::ISecureElement/SIM1</fqname>
-        <fqname>@1.2::ISecureElement/SIM2</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.tetheroffload.config</name>
@@ -278,16 +266,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.2::IBluetoothAudioProvidersFactory/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.camera.provider</name>
-        <transport>hwbinder</transport>
-        <version>2.6</version>
-        <interface>
-            <name>ICameraProvider</name>
-            <instance>internal/0</instance>
-        </interface>
-        <fqname>@2.6::ICameraProvider/internal/0</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.camera.atms</name>
@@ -504,6 +482,16 @@
         </interface>
         <fqname>@1.0::IVideoTelephony/default</fqname>
     </hal>
+    <hal format="hidl" override="true">
+        <name>vendor.nxp.nxpnfc</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>INxpNfc</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::INxpNfc/default</fqname>
+    </hal>
     <hal format="hidl">
         <name>vendor.oplus.hardware.appradio</name>
         <transport>hwbinder</transport>
@@ -536,22 +524,7 @@
         </interface>
         <fqname>@1.0::ITui/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>android.hardware.nfc</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>INfc</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal override="true" format="hidl">
-        <name>vendor.nxp.nxpnfc</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>INxpNfc</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
+    <sepolicy>
+        <version>33.0</version>
+    </sepolicy>
 </manifest>
