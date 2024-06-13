@@ -123,22 +123,68 @@
     <integer-array name="config_autoBrightnessLevels">
         <item>1</item>
         <item>2</item>
-        <item>3</item>
         <item>4</item>
+        <item>6</item>
         <item>8</item>
-        <item>12</item>
+        <item>10</item>
+        <item>15</item>
         <item>20</item>
-        <item>33</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
         <item>55</item>
+        <item>60</item>
+        <item>65</item>
+        <item>70</item>
+        <item>75</item>
+        <item>80</item>
+        <item>85</item>
         <item>90</item>
-        <item>148</item>
-        <item>245</item>
-        <item>403</item>
-        <item>665</item>
-        <item>1097</item>
-        <item>1808</item>
-        <item>2981</item>
+        <item>95</item>
+        <item>100</item>
+        <item>120</item>
+        <item>140</item>
+        <item>160</item>
+        <item>180</item>
+        <item>200</item>
+        <item>220</item>
+        <item>240</item>
+        <item>260</item>
+        <item>280</item>
+        <item>300</item>
+        <item>320</item>
+        <item>340</item>
+        <item>360</item>
+        <item>380</item>
+        <item>400</item>
+        <item>420</item>
+        <item>440</item>
+        <item>460</item>
+        <item>480</item>
+        <item>500</item>
+        <item>700</item>
+        <item>900</item>
+        <item>1100</item>
+        <item>1300</item>
+        <item>1500</item>
+        <item>1700</item>
+        <item>1900</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>3500</item>
+        <item>4000</item>
+        <item>4500</item>
         <item>5000</item>
+        <item>5500</item>
+        <item>6000</item>
+        <item>6500</item>
+        <item>7000</item>
+        <item>7500</item>
+        <item>8000</item>
     </integer-array>
 
     <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
@@ -434,7 +480,7 @@
     <bool name="config_forceToUseSelectedResolution">true</bool>
     
     <!-- Smart charging -->
-    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/mmi_charging_enable</string>
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/oplus_chg/battery/mmi_charging_enable</string>
     <string name="config_SmartChargingSuspendValue" translatable="false">1</string>
     <string name="config_SmartChargingResumeValue" translatable="false">0</string>
     

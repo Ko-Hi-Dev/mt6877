@@ -78,6 +78,7 @@ on init
     chmod 0664 /sys/module/oplus_chg/parameters/gauge_dbg_tbat
     chmod 0664 /sys/class/oplus_chg/battery/bcc_parms
     chmod 0664 /proc/charger/reserve_soc_debug
+    write /sys/class/oplus_chg/battery/fast_charge 1
 
 
 
@@ -972,6 +973,9 @@ on property:sys.boot_completed=1
     write /sys/block/dm-3/queue/read_ahead_kb 128
     write /sys/block/dm-4/queue/read_ahead_kb 128
     write /sys/block/dm-5/queue/read_ahead_kb 128
+    
+# FastCharge 
+    write /sys/class/oplus_chg/battery/fast_charge 1
 
 # Battery info
 on property:persist.vendor.mediatek.fg.disable=1
