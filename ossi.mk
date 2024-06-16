@@ -60,7 +60,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
 
 PRODUCT_COPY_FILES += \
-    packages/apps/RealmeParts/init/cabc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cabc.rc
+    packages/apps/RealmeParts/init/parts.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/parts.rc
 
 #PRODUCT_PACKAGES += \
 #    MtkInCallService
