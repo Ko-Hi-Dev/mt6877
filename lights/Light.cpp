@@ -84,8 +84,6 @@ static inline uint32_t scaleBrightness(uint32_t brightness, uint32_t maxBrightne
 
     if (maxBrightness == 4095)
         return brightness_table_0xfff[brightness];
-    if (maxBrightness == 2047)
-        return brightness_table_0x7ff[brightness];
 
     return brightness;
 }
