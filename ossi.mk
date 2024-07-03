@@ -59,8 +59,11 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
 
-PRODUCT_PACKAGES += \
-    MtkInCallService
+PRODUCT_COPY_FILES += \
+    packages/apps/RealmeParts/init/parts.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/parts.rc
+
+#PRODUCT_PACKAGES += \
+#    MtkInCallService
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
@@ -424,12 +427,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.recovery.mt6877.rc
     
-# RealmeParts
-$(call inherit-product, packages/apps/RealmeParts/parts.mk)
-
-
-PRODUCT_COPY_FILES += \
-    packages/apps/RealmeParts/init/cabc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cabc.rc
 
 # Secure Element
 PRODUCT_PACKAGES += \
