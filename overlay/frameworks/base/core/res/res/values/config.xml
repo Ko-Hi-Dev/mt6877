@@ -371,11 +371,16 @@
         <item>2185</item>
         <item>97</item>
      </integer-array>
-
-    <array name="config_sfps_sensor_props_0" translatable="false">
-        <item>local:0</item> <!--item>displayId</item-->
-        <item>2185</item> <!--item>sensorLocationX</item-->
-        <item>540</item> <!--item>sensorLocationY</item-->
-        <item>97</item> <!--item>sensorRadius</item-->
-    </array>
+     
+          <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
+     <integer-array name="config_udfps_sensor_props_0" translatable="false" >
+      <!--
+        <item>sensorLocationX</item>
+        <item>sensorLocationY</item>
+        <item>sensorRadius</item>
+      -->
+        <item>540</item>
+        <item>2185</item>
+        <item>97</item>
+     </integer-array>
 </resources>
