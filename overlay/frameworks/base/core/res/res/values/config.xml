@@ -383,4 +383,9 @@
         <item>2185</item>
         <item>97</item>
      </integer-array>
+     
+    <integer name="config_udfps_hbm_type">0</integer>
+
+    <!-- The radius of the enrollment progress bar, in dp -->
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">102</integer>
 </resources>
