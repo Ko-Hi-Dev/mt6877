@@ -300,6 +300,14 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.3.vendor \
     android.hardware.usb.gadget@1.0.vendor \
     android.hardware.usb.gadget@1.1.vendor
+    
+# OPlusExtras
+PRODUCT_PACKAGES += \   
+    OPlusExtras 
+    
+# Overlays
+PRODUCT_PACKAGES += \
+    OPlusExtrasResTarget
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
