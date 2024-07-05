@@ -302,7 +302,7 @@ PRODUCT_PACKAGES += \
     android.hardware.usb.gadget@1.1.vendor
     
 # OPlusExtras
-PRODUCT_PACKAGES += \   
+PRODUCT_PACKAGES += \
     OPlusExtras
  
 # Overlays
