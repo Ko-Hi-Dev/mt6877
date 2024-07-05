@@ -198,15 +198,6 @@
 
     <!-- Flag specifying whether VoLTE is available on device -->
     <bool name="config_device_volte_available">true</bool>
-<<<<<<< HEAD
-    
-     <!-- Flag specifying whether VoNR is available on device -->
-    <bool name="vonr_enabled_bool" value="true" />
-    
-     <!-- Flag specifying whether VoNR option to be visible on device -->
-    <bool name="vonr_setting_visibility_bool" value="true" />
-=======
->>>>>>> parent of 58e890d... update fastcharge files and update for upcoming changes
 
     <!-- Flag specifying whether VoLTE should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
