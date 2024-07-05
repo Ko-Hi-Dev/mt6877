@@ -303,8 +303,7 @@ PRODUCT_PACKAGES += \
     
 # OPlusExtras
 PRODUCT_PACKAGES += \   
-    OPlusExtras 
-    
+    OPlusExtras    
 # Overlays
 PRODUCT_PACKAGES += \
     OPlusExtrasResTarget
