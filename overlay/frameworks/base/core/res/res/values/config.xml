@@ -198,6 +198,12 @@
 
     <!-- Flag specifying whether VoLTE is available on device -->
     <bool name="config_device_volte_available">true</bool>
+    
+     <!-- Flag specifying whether VoNR is available on device -->
+    <boolean name="vonr_enabled_bool" value="true" />
+    
+     <!-- Flag specifying whether VoNR option to be visible on device -->
+    <boolean name="vonr_setting_visibility_bool" value="true" />
 
     <!-- Flag specifying whether VoLTE should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
@@ -312,6 +318,9 @@
 
     <!-- Expected value from fast charging status file  -->
     <string name="config_oemFastChargerStatusValue" translatable="false">1</string>
+    
+    <!-- Update battery info every second when device is charging -->
+    <bool name="config_alternateFastchargeInfoUpdate">true</bool>
 
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
